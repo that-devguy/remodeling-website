@@ -16,7 +16,7 @@ const Footer = () => {
           <Image
             src="/kitts-white-logo.png"
             alt="logo"
-            height={100}
+            height={67.03}
             width={300}
           ></Image>
         </Link>

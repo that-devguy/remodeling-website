@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="flex flex-col lg:flex-row hero items-center p-10 gap-8">
       <div className="flex w-1/2 flex-col gap-8">
         <h1 className="title text-7xl font-bold italic uppercase text-[#116ed1]">
-          Transform Your Home with Kitts Remodeling
+          Redefine Your Home’s Potential with Kitts Remodeling
         </h1>
         <p className="my-6">
           With over 25 years of experience, we deliver expert craftsmanship with
