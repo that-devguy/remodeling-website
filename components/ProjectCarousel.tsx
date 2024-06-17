@@ -17,13 +17,12 @@ const HighlightedProjectCard = ({ project }) => {
       <Image
         src={project.coverPhoto}
         alt={project.name}
-        height={430}
-        width={280}
-        style={{objectFit: "cover"}}
+        height={100}
+        width={100}
       />
-      <div>
-        <p>{project.name}</p>
-        <p>{project.type}</p>
+      <div className="card-body">
+        <h5 className="card-title">{project.name}</h5>
+        <p className="card-text">{project.description}</p>
       </div>
     </div>
   );
@@ -31,7 +30,7 @@ const HighlightedProjectCard = ({ project }) => {
 
 const ProjectCarousel = () => {
   return (
-    <Carousel className="overflow-hidden left-24">
+    <Carousel>
       <CarouselContent>
         {projects.map((project) => (
           <CarouselItem className="basis-1/3" key={project.id}>
