@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "John",
+    "favorite": true,
+    "coverPhoto": "/kitchen-2.jpeg",
+    "type": "Kitchen"
+  },
+  {
+    "id": 2,
+    "name": "Joe",
+    "favorite": true,
+    "coverPhoto": "/kitchen-2.jpeg",
+    "type": "Kitchen"
+  },
+  {
+    "id": 3,
+    "name": "Jane",
+    "favorite": true,
+    "coverPhoto": "/kitchen-2.jpeg",
+    "type": "Kitchen"
+  }
+]

@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import Link from "next/link";
+import ProjectCarousel from "./ProjectCarousel";
 
 const Hero = () => {
   return (
@@ -27,7 +28,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex w-1/2">
-        <p></p>
+        <ProjectCarousel />
       </div>
     </section>
   );
