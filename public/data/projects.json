@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "John",
+    "desc": "John's entire home renovation.",
     "favorite": true,
     "coverPhoto": "/kitchen-2.jpeg",
     "type": "Kitchen"
@@ -9,15 +10,17 @@
   {
     "id": 2,
     "name": "Joe",
+    "desc": "Joe's kitchen renovation.",
     "favorite": true,
-    "coverPhoto": "/kitchen-2.jpeg",
+    "coverPhoto": "/kitchen-1.jpeg",
     "type": "Kitchen"
   },
   {
     "id": 3,
     "name": "Jane",
+    "desc": "Jane's shower renovation.",
     "favorite": true,
-    "coverPhoto": "/kitchen-2.jpeg",
-    "type": "Kitchen"
+    "coverPhoto": "/bathroom-1.jpeg",
+    "type": "Bathroom"
   }
 ]

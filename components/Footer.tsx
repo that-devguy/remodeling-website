@@ -29,37 +29,37 @@ const Footer = () => {
       <div className="flex justify-end gap-10 w-2/3 p-4">
         <ul className="flex flex-col text-white w-1/4 gap-4">
           <p className="font-bold text-lg">Company</p>
-          <Link href="/" className="hover:underline">
+          <Link href="/" className="text-white/50 hover:text-white">
             About
           </Link>
-          <Link href="/" className="hover:underline">
+          <Link href="/" className="text-white/50 hover:text-white">
             FAQ
           </Link>
-          <Link href="/" className="hover:underline">
+          <Link href="/" className="text-white/50 hover:text-white">
             Careers
           </Link>
         </ul>
         <ul className="flex flex-col text-white w-1/4 gap-4">
           <p className="font-bold text-lg">Services</p>
-          <Link href="/" className="hover:underline">
+          <Link href="/" className="text-white/50 hover:text-white">
             Kitchens
           </Link>
-          <Link href="/" className="hover:underline">
+          <Link href="/" className="text-white/50 hover:text-white">
             Bathrooms
           </Link>
-          <Link href="/" className="hover:underline">
+          <Link href="/" className="text-white/50 hover:text-white">
             Backyards
           </Link>
-          <Link href="/" className="hover:underline">
+          <Link href="/" className="text-white/50 hover:text-white">
             Basements
           </Link>
         </ul>
         <ul className="flex flex-col text-white w-1/4 gap-4">
           <p className="font-bold text-lg">Contact</p>
-          <Link href="/" className="hover:underline">
+          <Link href="/" className="text-white/50 hover:text-white">
             (800) 555‑0100
           </Link>
-          <Link href="/" className="hover:underline">
+          <Link href="/" className="text-white/50 hover:text-white">
             hello@kittsremodeling.com
           </Link>
         </ul>

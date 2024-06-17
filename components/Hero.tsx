@@ -27,7 +27,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="flex w-1/2">
+      <div className="flex h-full items-center w-1/2">
         <ProjectCarousel />
       </div>
     </section>
