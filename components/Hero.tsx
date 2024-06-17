@@ -5,21 +5,21 @@ import ProjectCarousel from "./ProjectCarousel";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col lg:flex-row hero items-center p-10 gap-8">
-      <div className="flex w-1/2 flex-col gap-8">
-        <h1 className="title text-7xl font-bold italic uppercase text-[#116ed1]">
+    <section className="sm:min-h-screen-minus-nav mt-4 flex flex-col items-center gap-8 p-4 sm:flex-row sm:p-10 md:mt-0">
+      <div className="flex flex-col gap-8 sm:w-1/2">
+        <h1 className="title mr-auto text-4xl sm:text-5xl font-bold uppercase italic text-[#116ed1] lg:text-6xl 2xl:text-7xl">
           Redefine Your Home’s Potential with Kitts Remodeling
         </h1>
-        <p className="my-6">
+        <p className="sm:my-6">
           With over 25 years of experience, we deliver expert craftsmanship with
           an honest work ethic. From kitchen makeovers and bathroom renovations
           to complete home additions, our family-owned business brings your
           vision to life.
         </p>
-        <div className="flex items-center gap-8">
+        <div className="flex items-center gap-4 md:gap-8">
           <Button type="button" title="Get a Quote" />
           <Link
-            className="text-[#116ed1] font-bold underline underline-offset-4"
+            className="text-sm font-bold text-[#116ed1] underline underline-offset-4 md:text-base"
             href="/"
             key="projects"
           >
@@ -27,7 +27,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="flex h-full items-center w-1/2">
+      <div className="flex h-full items-center sm:w-1/2">
         <ProjectCarousel />
       </div>
     </section>

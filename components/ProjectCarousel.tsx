@@ -28,19 +28,19 @@ const HighlightedProjectCard = ({ project }) => {
           alt={project.name}
           height={430}
           width={500}
-          className="object-cover h-[430px] rounded-lg"
+          className="h-[215px] rounded-lg object-cover sm:h-[330px] md:h-[430px]"
         />
         {isHovered && (
           <Link href="/">
-            <div className="absolute inset-0 text-white font-bold underline underline-offset-4 bg-[#116ed1]/75 flex rounded-lg items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-[#116ed1]/75 font-bold text-white underline underline-offset-4">
               View Project
             </div>
           </Link>
         )}
       </div>
       <div className="card-body p-4">
-        <h5 className="card-title text-lg font-medium">{project.type}</h5>
-        <p className="card-text text-sm text-black/50">{project.desc}</p>
+        <h5 className="card-title sm:text-lg font-medium">{project.type}</h5>
+        <p className="card-text text-xs sm:text-sm text-black/50">{project.desc}</p>
       </div>
     </div>
   );
@@ -50,11 +50,11 @@ const ProjectCarousel = () => {
   const favoriteProjects = projects.filter((project) => project.favorite);
 
   return (
-    <Carousel className="w-full overflow-hidden left-24">
+    <Carousel className="left-10 w-full overflow-hidden md:left-12 lg:left-24">
       <CarouselContent>
         {favoriteProjects.map((project) => (
           <CarouselItem
-            className="basis-1/2 2xl:basis-1/3 height"
+            className="height basis-1/2 xl:basis-1/3"
             key={project.id}
           >
             <HighlightedProjectCard project={project} />

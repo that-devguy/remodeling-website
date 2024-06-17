@@ -6,8 +6,8 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between max-container padding-container z-30 py-5 px-10 bg-white">
-      <Link href="/" className="">
+    <nav className="max-container padding-container z-30 flex justify-between bg-white px-2 py-5 sm:px-10">
+      <Link href="/" className="hidden sm:flex sm:w-1/3">
         <Image
           src="/kitts-blue-logo.png"
           alt="logo"
@@ -15,14 +15,22 @@ const Navbar = () => {
           width={300}
         ></Image>
       </Link>
+      <Link href="/" className="flex sm:hidden">
+        <Image
+          src="/kitts-small-blue-logo.png"
+          alt="logo"
+          height={75}
+          width={75}
+        ></Image>
+      </Link>
 
-      <div className="lg:flex justify-between my-auto hidden gap-12">
-        <ul className="hidden h-full gap-12 lg:flex my-auto text-md font-base">
+      <div className="my-auto hidden justify-between gap-4 xl:gap-12 lg:flex">
+        <ul className="text-md font-base my-auto hidden h-full gap-4 xl:gap-12 lg:flex">
           {NAV_LINKS.map((link) => (
             <Link
               href={link.href}
               key={link.key}
-              className="text-black/50 cursor-pointer transition-all hover:text-black"
+              className="cursor-pointer text-black/50 transition-all hover:text-black"
             >
               {link.label}
             </Link>
