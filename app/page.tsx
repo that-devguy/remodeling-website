@@ -1,12 +1,13 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Image from "next/image";
+import ServicesPreview from "@/components/ServicesPreview";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <About />
+      <ServicesPreview />
     </>
   );
 }

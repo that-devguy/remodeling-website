@@ -26,8 +26,8 @@ const Navbar = () => {
         ></Image>
       </Link>
 
-      <div className="my-auto hidden justify-between gap-4 xl:gap-12 lg:flex">
-        <ul className="text-md font-base my-auto hidden h-full gap-4 xl:gap-12 lg:flex">
+      <div className="my-auto hidden justify-between gap-4 lg:flex xl:gap-12">
+        <ul className="text-md font-base my-auto hidden h-full gap-4 lg:flex xl:gap-12">
           {NAV_LINKS.map((link) => (
             <Link
               href={link.href}
@@ -42,7 +42,10 @@ const Navbar = () => {
       </div>
 
       {/* mobile nav menu */}
-      <FontAwesomeIcon icon={faBars} className="w-7 justify-center mx-3 lg:hidden text-[#116ed1]" />
+      <FontAwesomeIcon
+        icon={faBars}
+        className="mx-3 w-7 justify-center text-[#116ed1] lg:hidden"
+      />
     </nav>
   );
 };

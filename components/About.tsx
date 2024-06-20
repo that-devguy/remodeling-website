@@ -5,17 +5,19 @@ import Link from "next/link";
 const About = () => {
   return (
     <section className="flex flex-col items-center bg-slate-50">
-      <div className="flex max-w-[1920px] flex-col items-center gap-8 overflow-hidden p-4 py-24 sm:flex-row sm:px-10">
-        <div className="flex h-full items-center sm:w-1/2">
-          <Image
-            src="/kitchen-1.jpeg"
-            alt="kitchen-1"
-            width={650}
-            height={400}
-            className="rounded-lg object-cover md:m-auto"
-          />
+      <div className="flex max-w-[1920px] flex-col items-center gap-8 overflow-hidden p-4 py-10 sm:flex-row sm:px-10 lg:py-24 xl:gap-12">
+        <div className="relative h-full items-start sm:w-1/2 md:items-center">
+          <div className="relative flex h-full">
+            <Image
+              src="/kitchen-1.jpeg"
+              alt="kitchen-1"
+              width="640"
+              height="400"
+              className="w-full rounded-lg object-cover sm:h-[330px] 2xl:h-[430px]"
+            />
+          </div>
         </div>
-        <div className="flex flex-col gap-4 md:gap-2 xl:gap-8 sm:w-1/2">
+        <div className="flex flex-col gap-4 sm:w-1/2 md:gap-2 xl:gap-8">
           <h1 className="title mr-auto text-2xl font-bold uppercase italic text-[#116ed1] sm:text-2xl lg:text-4xl 2xl:text-5xl">
             About Kitts Remodeling
           </h1>

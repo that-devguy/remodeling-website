@@ -4,8 +4,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="max-container padding-container z-30 flex flex-col lg:flex-row justify-between bg-[#116ed1] px-2 py-5 sm:px-10 pb-20 pt-10">
-      <div className="flex flex-col md:flex-row lg:hidden justify-start gap-4 mb-6 md:gap-32 p-4">
+    <footer className="max-container padding-container z-30 flex flex-col justify-between bg-[#116ed1] px-2 py-5 pb-20 pt-10 sm:px-10 lg:flex-row">
+      <div className="mb-6 flex flex-col justify-start gap-4 p-4 md:flex-row md:gap-32 lg:hidden">
         <ul className="flex flex-col gap-2 text-white">
           <p className="text-lg font-bold">Company</p>
           <Link href="/" className="text-white/50 hover:text-white">
@@ -43,8 +43,8 @@ const Footer = () => {
           </Link>
         </ul>
       </div>
-      <div className="flex lg:w-1/3 flex-col justify-between gap-10">
-        <p className="p-4 text-white hidden lg:flex">
+      <div className="flex flex-col justify-between gap-10 lg:w-1/3">
+        <p className="hidden p-4 text-white lg:flex">
           With over 25 years of experience, we deliver expert craftsmanship with
           an honest work ethic. From kitchen makeovers and bathroom renovations
           to complete home additions, our family-owned business brings your
@@ -64,7 +64,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="lg:flex hidden w-2/3 justify-end gap-16 xl:gap-32 p-4">
+      <div className="hidden w-2/3 justify-end gap-16 p-4 lg:flex xl:gap-32">
         <ul className="flex flex-col gap-4 text-white">
           <p className="text-lg font-bold">Company</p>
           <Link href="/" className="text-white/50 hover:text-white">
