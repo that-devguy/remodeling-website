@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Button from "./Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -38,6 +40,9 @@ const Navbar = () => {
         </ul>
         <Button type="button" title="Get a Free Estimate" />
       </div>
+
+      {/* mobile nav menu */}
+      <FontAwesomeIcon icon={faBars} className="w-7 justify-center mx-3 lg:hidden text-[#116ed1]" />
     </nav>
   );
 };

@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <main className="relative overflow-hidden max-w-[1920px] mx-auto">{children}</main>
+        <main className="relative overflow-hidden">{children}</main>
         <Footer />
       </body>
     </html>
