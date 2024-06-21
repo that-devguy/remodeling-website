@@ -10,6 +10,9 @@ const config = {
   ],
   prefix: "",
   theme: {
+    colors: {
+      "brand-primary": "#116ed1",
+    },
     container: {
       center: true,
       padding: "2rem",

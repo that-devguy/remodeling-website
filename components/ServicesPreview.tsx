@@ -10,7 +10,7 @@ const ServicesPreview = () => {
     <section className="flex flex-col items-center">
       <div className="flex w-full max-w-[1920px] flex-col items-center gap-8 overflow-hidden p-4 py-10 sm:flex-row sm:px-10 lg:py-24">
         <div className="flex w-full flex-col gap-4 md:gap-2 xl:gap-8">
-          <h1 className="title mr-auto text-2xl font-bold uppercase italic text-[#116ed1] sm:text-2xl lg:text-4xl 2xl:text-5xl">
+          <h1 className="title mr-auto text-2xl font-bold uppercase italic text-brand-primary sm:text-2xl lg:text-4xl 2xl:text-5xl">
             Our Most Popular Services
           </h1>
           <div className="mb-6 sm:my-6">
@@ -37,7 +37,7 @@ const ServicesPreview = () => {
             </ul>
           </div>
           <Link
-            className="ml-auto text-sm font-bold text-[#116ed1] underline underline-offset-4 md:text-base"
+            className="ml-auto text-sm font-bold text-brand-primary underline underline-offset-4 md:text-base"
             href="/"
             key="projects"
           >

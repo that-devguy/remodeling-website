@@ -1,8 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 
-const About = () => {
+const WhyUs = () => {
   return (
     <section className="flex flex-col items-center bg-slate-50">
       <div className="flex max-w-[1920px] flex-col items-center gap-8 overflow-hidden p-4 py-10 sm:flex-row sm:px-10 lg:py-24 xl:gap-12">
@@ -42,4 +40,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default WhyUs;

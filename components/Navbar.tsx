@@ -44,7 +44,7 @@ const Navbar = () => {
       {/* mobile nav menu */}
       <FontAwesomeIcon
         icon={faBars}
-        className="mx-3 w-7 justify-center text-[#116ed1] lg:hidden"
+        className="mx-3 w-7 justify-center text-brand-primary lg:hidden"
       />
     </nav>
   );

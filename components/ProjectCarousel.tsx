@@ -32,7 +32,7 @@ const HighlightedProjectCard = ({ project }) => {
         />
         {isHovered && (
           <Link href="/">
-            <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-[#116ed1]/75 font-bold text-white underline underline-offset-4">
+            <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-brand-primary/75 font-bold text-white underline underline-offset-4">
               View Project
             </div>
           </Link>
