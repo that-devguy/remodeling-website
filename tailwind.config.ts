@@ -10,9 +10,6 @@ const config = {
   ],
   prefix: "",
   theme: {
-    colors: {
-      "brand-primary": "#116ed1",
-    },
     container: {
       center: true,
       padding: "2rem",
@@ -21,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      colors: {
+        "brand-primary": "#116ed1",
+      },
       minHeight: {
         "screen-minus-nav": "calc(100vh - 110px)",
       },

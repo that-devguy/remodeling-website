@@ -18,9 +18,9 @@ const About = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4 sm:w-1/2 md:gap-2 xl:gap-8">
-          <h1 className="title mr-auto text-2xl font-bold uppercase italic text-brand-primary sm:text-2xl lg:text-4xl 2xl:text-5xl">
+          <h2 className="title mr-auto text-2xl font-bold uppercase italic text-brand-primary sm:text-2xl lg:text-4xl 2xl:text-5xl">
             About Kitts Remodeling
-          </h1>
+          </h2>
           <p className="sm:my-6">
             Founded in 2001, Kitts Remodeling has been dedicated to providing
             top-notch remodeling services with a personal touch. Our founder,
