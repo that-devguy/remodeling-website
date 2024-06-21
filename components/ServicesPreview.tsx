@@ -14,7 +14,7 @@ const ServicesPreview = () => {
             Our Most Popular Services
           </h1>
           <div className="mb-6 sm:my-6">
-            <ul className="grid grid-cols-2 justify-between gap-4 sm:gap-8 md:grid-cols-4 md:gap-10 xl:gap-16">
+            <ul className="grid grid-cols-2 justify-between gap-4 sm:gap-8 md:grid-cols-4 xl:gap-12">
               {featuredServices.map((service) => (
                 <li key={service.id}>
                   <Image
@@ -22,7 +22,7 @@ const ServicesPreview = () => {
                     alt="kitchen-2"
                     width="350"
                     height="350"
-                    className="aspect-[3/5] max-h-[330px] rounded-lg object-cover"
+                    className="aspect-[3/5] max-h-[191px] md:max-h-[330px] rounded-lg object-cover"
                   />
                   <div>
                     <h5 className="py-4 font-medium sm:text-lg">

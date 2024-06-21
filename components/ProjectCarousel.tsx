@@ -59,6 +59,8 @@ const ProjectCarousel = () => {
             <HighlightedProjectCard project={project} />
           </CarouselItem>
         ))}
+        <CarouselItem className="basis-1/2" key="blank">
+        </CarouselItem>
       </CarouselContent>
     </Carousel>
   );
