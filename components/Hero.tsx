@@ -6,7 +6,7 @@ import ProjectCarousel from "./ProjectCarousel";
 const Hero = () => {
   return (
     <section className="mx-auto flex flex-col items-center">
-      <div className="flex max-w-[1920px] flex-col items-center gap-8 overflow-hidden p-4 sm:min-h-screen-minus-nav sm:flex-row sm:p-10">
+      <div className="flex min-h-screen-minus-nav max-w-[1920px] flex-col items-center justify-center gap-8 overflow-hidden p-4 sm:flex-row sm:p-10">
         <div className="flex flex-col gap-8 sm:w-1/2">
           <h1 className="title mr-auto text-3xl font-bold uppercase italic text-[#116ed1] sm:text-4xl lg:text-5xl 2xl:text-7xl">
             Redefine Your Home’s Potential with Kitts Remodeling
