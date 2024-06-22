@@ -38,3 +38,27 @@ body {
   scrollbar-width: none;
   /* Firefox */
 }
+
+/* styles.css */
+.carousel-slider-wrapper {
+  scrollbar-width: thin;
+  /* For Firefox */
+  scrollbar-color: #116ed1 #f1f1f1;
+  /* For Firefox */
+}
+
+.carousel-slider-wrapper::-webkit-scrollbar {
+  height: 8px;
+  /* Adjust the height of the scrollbar */
+}
+
+.carousel-slider-wrapper::-webkit-scrollbar-thumb {
+  background: #116ed1;
+  /* Color of the scrollbar */
+  border-radius: 10px;
+}
+
+.carousel-slider-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Background of the scrollbar track */
+}

@@ -53,7 +53,7 @@ const ProjectCarousel = () => {
 
   return (
     <Carousel className="left-10 w-full overflow-hidden sm:left-16 md:left-12 lg:left-24">
-      <CarouselContent>
+      <CarouselContent className="">
         {favoriteProjects.map((project) => (
           <CarouselItem className="basis-1/2" key={project.id}>
             <HighlightedProjectCard project={project} />
