@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,6 +16,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+import StepsCarousel from "@/components/StepsCarousel";
+
 const Steps = () => {
   return (
     <section className="bg-brand-primary flex flex-col items-center">
@@ -28,7 +31,7 @@ const Steps = () => {
             journey, making it stress-free and enjoyable!
           </h3>
           <div className="sm:my-6">
-            {/* mobile view */}
+            {/* mobile view
             <Carousel className="mt-6 w-full sm:hidden">
               <CarouselContent>
                 <CarouselItem className="flex flex-col items-center justify-center">
@@ -78,7 +81,8 @@ const Steps = () => {
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />
-            </Carousel>
+            </Carousel> */}
+            <StepsCarousel />
 
             {/* desktop view */}
             <ul className="hidden justify-between sm:flex sm:gap-8 xl:gap-12">

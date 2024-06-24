@@ -62,3 +62,46 @@ body {
   background: #f1f1f1;
   /* Background of the scrollbar track */
 }
+
+
+/* Embla */
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.embla__dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.embla__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.embla__dot--selected {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: white !important;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
