@@ -42,10 +42,12 @@ const Navbar = () => {
       </div>
 
       {/* mobile nav menu */}
-      <FontAwesomeIcon
-        icon={faBars}
-        className="mx-3 w-7 justify-center text-brand-primary lg:hidden"
-      />
+      <div className="flex justify-center items-center">
+        <FontAwesomeIcon
+          icon={faBars}
+          className="text-brand-primary mx-3 w-6 h-6 justify-center lg:hidden"
+        />
+      </div>
     </nav>
   );
 };
