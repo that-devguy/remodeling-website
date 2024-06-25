@@ -40,7 +40,7 @@ const HighlightedProjectCard = ({ project }) => {
       </div>
       <div className="py-4 sm:p-4">
         <h5 className="font-medium sm:text-lg">{project.type}</h5>
-        <p className="text-xs text-black/50 sm:text-sm">
+        <p className="text-sm text-black/50 sm:text-sm">
           {project.desc}
         </p>
       </div>

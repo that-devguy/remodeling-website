@@ -7,10 +7,10 @@ const ServicesPreview = () => {
   const featuredServices = services.filter((service) => service.isFavorite);
 
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center bg-slate-50">
       <div className="flex w-full max-w-[1920px] flex-col items-center gap-8 overflow-hidden p-4 py-10 sm:flex-row sm:px-10 lg:py-24">
         <div className="flex w-full flex-col gap-4 md:gap-2 xl:gap-8">
-          <h2 className="title text-brand-primary mr-auto text-2xl font-bold uppercase italic sm:text-2xl lg:text-4xl 2xl:text-5xl">
+          <h2 className="title mr-auto text-2xl font-bold uppercase italic text-brand-primary sm:text-2xl lg:text-4xl 2xl:text-5xl">
             Our Most Popular Services
           </h2>
           <div className="mb-6 sm:my-6">
@@ -26,7 +26,7 @@ const ServicesPreview = () => {
                   />
                   <div className="pt-4">
                     <h5 className="font-medium sm:text-lg">{service.name}</h5>
-                    <p className="text-xs text-black/50 sm:text-sm">
+                    <p className="text-sm text-black/50">
                       {service.description}
                     </p>
                   </div>
@@ -35,7 +35,7 @@ const ServicesPreview = () => {
             </ul>
           </div>
           <Link
-            className="text-brand-primary ml-auto text-sm font-bold underline underline-offset-4 md:text-base"
+            className="ml-auto text-sm font-bold text-brand-primary underline underline-offset-4 md:text-base"
             href="/"
             key="projects"
           >

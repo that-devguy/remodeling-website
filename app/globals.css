@@ -80,28 +80,25 @@ body {
 
 .embla__dots {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 10px;
-  margin-top: 20px;
+  margin-left: 4px;
 }
 
 .embla__dot {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  background-color: transparent;
+  background-color: #cbd5e1;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .embla__dot--selected {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  border-width: 2px;
-  border-color: white !important;
-  background-color: transparent;
+  background-color: #116ed1;
   cursor: pointer;
   transition: background-color 0.3s;
 }

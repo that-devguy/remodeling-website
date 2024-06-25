@@ -26,7 +26,7 @@ const Navbar = () => {
         ></Image>
       </Link>
 
-      <div className="my-auto hidden justify-between gap-4 lg:flex xl:gap-12">
+      <div className="my-auto ml-auto hidden justify-between gap-4 lg:flex xl:gap-12">
         <ul className="text-md font-base my-auto hidden h-full gap-4 lg:flex xl:gap-12">
           {NAV_LINKS.map((link) => (
             <Link
@@ -42,10 +42,10 @@ const Navbar = () => {
       </div>
 
       {/* mobile nav menu */}
-      <div className="flex justify-center items-center">
+      <div className="flex items-center justify-center">
         <FontAwesomeIcon
           icon={faBars}
-          className="text-brand-primary mx-3 w-6 h-6 justify-center lg:hidden"
+          className="mx-3 h-6 w-6 justify-center text-brand-primary lg:hidden"
         />
       </div>
     </nav>
