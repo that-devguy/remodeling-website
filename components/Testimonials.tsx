@@ -43,7 +43,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          <div className="mt-6 flex items-center justify-between pl-2">
+          <div className="flex items-center justify-between pl-2">
             <div className="embla__dots flex items-center">
               {scrollSnaps.map((_, index) => (
                 <DotButton

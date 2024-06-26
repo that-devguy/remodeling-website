@@ -24,13 +24,13 @@ const TestimonialCard = ({
 }: TestimonialCardProps) => {
   const desc = capitalizeFirstLetter(description);
   return (
-    <div className="embla__slide !mr-6 flex max-w-[500px] flex-col rounded-b-lg bg-white shadow-lg select-none">
+    <div className="embla__slide !mr-6 flex max-w-[400px] flex-col rounded-b-lg bg-white shadow-lg select-none">
       <Image
         src={coverPhoto}
         alt={type}
         height="500"
         width="600"
-        className="h-[215px] rounded-t-lg object-cover sm:h-[330px] 2xl:h-[250px]"
+        className="h-[215px] sm:h[225px] rounded-t-lg object-cover"
       />
       <div className="p-4">
         <div className="flex items-center justify-between">
