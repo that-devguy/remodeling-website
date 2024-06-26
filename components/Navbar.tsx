@@ -38,7 +38,7 @@ const Navbar = () => {
             </Link>
           ))}
         </ul>
-        <Button type="button" title="Get a Free Estimate" />
+        <Button type="button" title="Get a Consultation" />
       </div>
 
       {/* mobile nav menu */}

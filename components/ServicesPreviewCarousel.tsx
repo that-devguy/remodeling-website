@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
+import useEmblaCarousel from "embla-carousel-react";
 import {
   DotButton,
   useDotButton,
