@@ -50,7 +50,7 @@ const WhyUsTable = () => {
       <TableBody>
         {kittsPerks.map((perk, index) => (
           <TableRow key={index}>
-            <TableCell className="text-base font-medium">{perk}</TableCell>
+            <TableCell className="sm:text-base text-small font-medium">{perk}</TableCell>
             <TableCell className="text-center">
               <FontAwesomeIcon
                 icon={faCircleCheck}
