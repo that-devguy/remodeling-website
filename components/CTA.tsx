@@ -20,8 +20,8 @@ const CTA = () => {
             <Button type="button" title="Request a Free Consultation" />
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-12 mr-auto sm:justify-between sm:mr-0">
-          <div className="flex flex-col gap-4 sm:w-1/2">
+        <div className="mr-auto flex flex-col gap-4 sm:mr-0 sm:w-1/2 xl:w-1/3 sm:flex-row sm:justify-between sm:gap-12">
+          <div className="flex flex-col gap-4">
             <div>
               <h5 className="font-medium sm:text-lg">Email</h5>
               <p className="text-sm text-black/50">hello@kittsremodeling.com</p>
