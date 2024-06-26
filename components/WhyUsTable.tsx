@@ -19,6 +19,7 @@ const kittsPerks = [
   "Tailored to your needs and style",
   "Attention to detail and quality",
   "Regular updates and clear communication",
+  "Pet friendly"
 ];
 
 const WhyUsTable = () => {

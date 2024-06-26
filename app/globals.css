@@ -71,11 +71,15 @@ body {
 
 .embla__container {
   display: flex;
+  /* This ensures that the slides are laid out in a row and allows for overflow scrolling */
 }
 
 .embla__slide {
-  flex: 0 0 100%;
+  flex: 0 0 75%;
+  /* Adjust to show part of the second slide, 45% will leave 10% visible */
   min-width: 0;
+  margin-right: 5%;
+  /* Add margin to create space between the slides */
 }
 
 .embla__dots {
