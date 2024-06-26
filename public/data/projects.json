@@ -2,25 +2,41 @@
   {
     "id": 1,
     "name": "John",
-    "description": "John's entire home renovation.",
+    "description": "entire home renovation",
     "isFavorite": true,
+    "useTestimonial": true,
     "coverPhoto": "/kitchen-2.jpeg",
-    "type": "Kitchen"
+    "type": "Kitchen",
+    "testimonial": "Choosing Kitts Remodeling was the best decision we made for our home renovation. Their team was professional, efficient, and truly cared about our vision. The end result exceeded our expectations and we couldn’t be happier with our new kitchen!"
   },
   {
     "id": 2,
     "name": "Joe",
-    "description": "Joe's kitchen renovation.",
+    "description": "kitchen renovation",
     "isFavorite": true,
+    "useTestimonial": true,
     "coverPhoto": "/kitchen-1.jpeg",
-    "type": "Kitchen"
+    "type": "Kitchen",
+    "testimonial": "Kitts Remodeling transformed our kitchen into an incredible space. Their attention to detail and commitment to excellence is unmatched. We love spending time cooking in our new kitchen and have received so many compliments from friends and family."
   },
   {
     "id": 3,
     "name": "Jane",
-    "description": "Jane's shower renovation.",
+    "description": "shower renovation",
     "isFavorite": true,
+    "useTestimonial": true,
     "coverPhoto": "/bathroom-1.jpeg",
-    "type": "Bathroom"
+    "type": "Bathroom",
+    "testimonial": "We had an amazing experience with Kitts Remodeling. From the initial consultation to the final touches, they were attentive, communicative, and dedicated to quality craftsmanship. Our bathroom feels like a luxury spa now. Highly recommend!"
+  },
+  {
+    "id": 4,
+    "name": "Jane",
+    "description": "shower renovation",
+    "isFavorite": false,
+    "useTestimonial": true,
+    "coverPhoto": "/bathroom-1.jpeg",
+    "type": "Bathroom",
+    "testimonial": "We had an amazing experience with Kitts Remodeling. From the initial consultation to the final touches, they were attentive, communicative, and dedicated to quality craftsmanship. Our bathroom feels like a luxury spa now. Highly recommend!"
   }
 ]

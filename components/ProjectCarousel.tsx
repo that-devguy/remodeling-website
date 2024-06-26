@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/emblaCarouselDotButton";
 import projects from "../public/data/projects.json";
 
-export default function EmblaCarousel() {
+export default function ProjectCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel();
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);
@@ -53,7 +53,7 @@ export default function EmblaCarousel() {
 
               <div className="py-4 sm:p-4">
                 <h5 className="font-medium sm:text-lg">{project.type}</h5>
-                <p className="text-sm text-black/50">{project.description}</p>
+                <p className="text-sm text-black/50">{project.name}'s {project.description}.</p>
               </div>
             </div>
           ))}

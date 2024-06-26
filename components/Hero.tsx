@@ -29,7 +29,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="flex h-full items-center sm:w-1/3">
+        <div className="flex h-full items-center sm:w-1/3 select-none">
           <ProjectCarousel />
         </div>
       </div>
