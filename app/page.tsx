@@ -3,6 +3,7 @@ import About from "@/components/About";
 import ServicesPreview from "@/components/ServicesPreview";
 import WhyUs from "@/components/WhyUs";
 import Testimonials from "@/components/Testimonials";
+import CTA from "@/components/CTA";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <ServicesPreview />
       <WhyUs />
       <Testimonials />
+      <CTA />
     </>
   );
 }
