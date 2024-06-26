@@ -14,7 +14,7 @@ const Navbar = () => {
           src="/kitts-blue-logo.png"
           alt="logo"
           height={67.03}
-          width={300}
+          width={200}
         ></Image>
       </Link>
       <Link href="/" className="flex sm:hidden">
@@ -27,7 +27,7 @@ const Navbar = () => {
       </Link>
 
       <div className="my-auto ml-auto hidden justify-between gap-4 lg:flex xl:gap-12">
-        <ul className="text-md font-base my-auto hidden h-full gap-4 lg:flex xl:gap-12">
+        <ul className="text-sm font-base my-auto hidden h-full gap-4 lg:flex xl:gap-12">
           {NAV_LINKS.map((link) => (
             <Link
               href={link.href}

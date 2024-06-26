@@ -20,7 +20,7 @@ const CTA = () => {
             <Button type="button" title="Request a Free Consultation" />
           </div>
         </div>
-        <div className="flex gap-12 sm:w-1/3">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-12 mr-auto sm:justify-between sm:mr-0">
           <div className="flex flex-col gap-4 sm:w-1/2">
             <div>
               <h5 className="font-medium sm:text-lg">Email</h5>
@@ -44,33 +44,33 @@ const CTA = () => {
           </div>
           <div className="flex flex-col sm:w-1/2">
             <h5 className="font-medium sm:text-lg">Office Hours</h5>
-            <div className="flex justify-between">
+            <div className="flex justify-between lg:gap-8">
               <p className="text-sm text-black/50">Mon</p>
-              <p className="text-sm text-black/50">8:00am - 6:00pm</p>
+              <p className="text-sm text-black/50">8am - 6pm</p>
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between lg:gap-8">
               <p className="text-sm text-black/50">Tues</p>
-              <p className="text-sm text-black/50">8:00am - 6:00pm</p>
+              <p className="text-sm text-black/50">8am - 6pm</p>
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between lg:gap-8">
               <p className="text-sm text-black/50">Wed</p>
-              <p className="text-sm text-black/50">8:00am - 6:00pm</p>
+              <p className="text-sm text-black/50">8am - 6pm</p>
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between lg:gap-8">
               <p className="text-sm text-black/50">Thu</p>
-              <p className="text-sm text-black/50">8:00am - 6:00pm</p>
+              <p className="text-sm text-black/50">8am - 6pm</p>
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between lg:gap-8">
               <p className="text-sm text-black/50">Fri</p>
-              <p className="text-sm text-black/50">8:00am - 6:00pm</p>
+              <p className="text-sm text-black/50">8am - 6pm</p>
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between lg:gap-8">
               <p className="text-sm text-black/50">Sat</p>
-              <p className="text-sm text-black/50">8:00am - 6:00pm</p>
+              <p className="text-sm text-black/50">8am - 6pm</p>
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between lg:gap-8">
               <p className="text-sm text-black/50">Sun</p>
-              <p className="text-sm text-black/50">8:00am - 6:00pm</p>
+              <p className="text-sm text-black/50">8am - 6pm</p>
             </div>
           </div>
         </div>
