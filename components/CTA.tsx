@@ -20,60 +20,6 @@ const CTA = () => {
             <Button type="button" title="Request a Free Consultation" />
           </div>
         </div>
-        <div className="mr-auto flex flex-col gap-4 sm:mr-0 sm:w-1/2 xl:w-1/3 sm:flex-row sm:justify-between sm:gap-12">
-          <div className="flex flex-col gap-4">
-            <div>
-              <h5 className="font-medium sm:text-lg">Email</h5>
-              <p className="text-sm text-black/50">hello@kittsremodeling.com</p>
-            </div>
-            <div>
-              <h5 className="font-medium sm:text-lg">Phone</h5>
-              <p className="text-sm text-black/50">(800) 555‑0100</p>
-            </div>
-            <div>
-              <h5 className="font-medium sm:text-lg">Service Area</h5>
-              <p className="text-sm text-black/50">Lakewood</p>
-              <p className="text-sm text-black/50">Westlake</p>
-              <p className="text-sm text-black/50">Avon Lake</p>
-              <p className="text-sm text-black/50">Bay Village</p>
-              <p className="text-sm text-black/50">Rocky River</p>
-              <p className="text-sm text-black/50">Fairview Park</p>
-              <p className="text-sm text-black/50">North Olmsted</p>
-              <p className="text-sm text-black/50">North Ridgeville</p>
-            </div>
-          </div>
-          <div className="flex flex-col sm:w-1/2">
-            <h5 className="font-medium sm:text-lg">Office Hours</h5>
-            <div className="flex justify-between lg:gap-8">
-              <p className="text-sm text-black/50">Mon</p>
-              <p className="text-sm text-black/50">8am - 6pm</p>
-            </div>
-            <div className="flex justify-between lg:gap-8">
-              <p className="text-sm text-black/50">Tues</p>
-              <p className="text-sm text-black/50">8am - 6pm</p>
-            </div>
-            <div className="flex justify-between lg:gap-8">
-              <p className="text-sm text-black/50">Wed</p>
-              <p className="text-sm text-black/50">8am - 6pm</p>
-            </div>
-            <div className="flex justify-between lg:gap-8">
-              <p className="text-sm text-black/50">Thu</p>
-              <p className="text-sm text-black/50">8am - 6pm</p>
-            </div>
-            <div className="flex justify-between lg:gap-8">
-              <p className="text-sm text-black/50">Fri</p>
-              <p className="text-sm text-black/50">8am - 6pm</p>
-            </div>
-            <div className="flex justify-between lg:gap-8">
-              <p className="text-sm text-black/50">Sat</p>
-              <p className="text-sm text-black/50">8am - 6pm</p>
-            </div>
-            <div className="flex justify-between lg:gap-8">
-              <p className="text-sm text-black/50">Sun</p>
-              <p className="text-sm text-black/50">8am - 6pm</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
