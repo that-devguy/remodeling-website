@@ -55,7 +55,8 @@ const Testimonials = () => {
             </div>
             <Link
               className="text-sm font-bold text-brand-primary underline underline-offset-4 md:text-base"
-              href="/"
+              href="https://www.yelp.com/biz/kitts-remodeling-rocky-river-2"
+              target="none"
             >
               View All Testimonials
             </Link>
