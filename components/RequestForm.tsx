@@ -1,7 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -111,7 +111,11 @@ export default function RequestForm() {
             <FormItem>
               <FormLabel>Preferred Method of Communication</FormLabel>
               <FormControl>
-                <RadioGroup defaultValue="Phone Call" {...field}>
+                <RadioGroup
+                  defaultValue="Phone Call"
+                  {...field}
+                  onValueChange={field.onChange}
+                >
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="Phone Call" id="phone-call" />
                     <Label htmlFor="phone-call">Phone Call</Label>
@@ -137,7 +141,10 @@ export default function RequestForm() {
             <FormItem>
               <FormLabel>Best Time to Reach You</FormLabel>
               <FormControl>
-                <RadioGroup defaultValue="Morning" {...field}>
+                <RadioGroup
+                  defaultValue="Morning"
+                  onValueChange={field.onChange}
+                >
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="Morning" id="morning" />
                     <Label htmlFor="morning">Morning</Label>
@@ -162,28 +169,28 @@ export default function RequestForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel>Type of Project</FormLabel>
-              <FormControl>
-                <Select {...field}>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
                   <SelectTrigger className="w-full">
                     <SelectValue placeholder="Select a project type" />
                   </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="Kitchen Remodel">
-                      Kitchen Remodel
-                    </SelectItem>
-                    <SelectItem value="Bathroom Renovation">
-                      Bathroom Renovation
-                    </SelectItem>
-                    <SelectItem value="Floor Installation">
-                      Floor Installation
-                    </SelectItem>
-                    <SelectItem value="Deck Construction">
-                      Deck Construction
-                    </SelectItem>
-                    <SelectItem value="Other">Other</SelectItem>
-                  </SelectContent>
-                </Select>
-              </FormControl>
+                </FormControl>
+                <SelectContent>
+                  <SelectItem value="Kitchen Remodel">
+                    Kitchen Remodel
+                  </SelectItem>
+                  <SelectItem value="Bathroom Renovation">
+                    Bathroom Renovation
+                  </SelectItem>
+                  <SelectItem value="Floor Installation">
+                    Floor Installation
+                  </SelectItem>
+                  <SelectItem value="Deck Construction">
+                    Deck Construction
+                  </SelectItem>
+                  <SelectItem value="Other">Other</SelectItem>
+                </SelectContent>
+              </Select>
               <FormMessage />
             </FormItem>
           )}
@@ -194,23 +201,24 @@ export default function RequestForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel>Estimated Budget Range</FormLabel>
-              <FormControl>
-                <Select {...field}>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
                   <SelectTrigger className="w-full">
                     <SelectValue placeholder="Select your budget range" />
                   </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="Below $10,000">Below $10,000</SelectItem>
-                    <SelectItem value="$10,000 - $20,000">
-                      $10,000 - $20,000
-                    </SelectItem>
-                    <SelectItem value="$20,000 - $50,000">
-                      $20,000 - $50,000
-                    </SelectItem>
-                    <SelectItem value="Above $50,000">Above $50,000</SelectItem>
-                  </SelectContent>
-                </Select>
-              </FormControl>
+                </FormControl>
+                <SelectContent>
+                  <SelectItem value="Below $10,000">Below $10,000</SelectItem>
+                  <SelectItem value="$10,000 - $20,000">
+                    $10,000 - $20,000
+                  </SelectItem>
+                  <SelectItem value="$20,000 - $50,000">
+                    $20,000 - $50,000
+                  </SelectItem>
+                  <SelectItem value="Above $50,000">Above $50,000</SelectItem>
+                </SelectContent>
+              </Select>
+
               <FormMessage />
             </FormItem>
           )}
