@@ -23,10 +23,11 @@ const Button = ({ title }: ButtonProps) => {
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle className="mb-8 font-medium">
+          <DialogTitle className="font-medium">
             Request a Free Consultation
           </DialogTitle>
           <DialogDescription>
+            <p className="mb-8">We typically respond to your request for a consultation within 1 business day.</p>
             <RequestForm />
           </DialogDescription>
         </DialogHeader>

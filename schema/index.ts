@@ -24,10 +24,7 @@ const RequestSchema = z.object({
         message: "Type of Project is required",
       },
     ),
-  preferredConsultationDate: z
-    .string()
-    .min(1, "Preferred Consultation Date is required"),
-  preferredConsultationTime: z.enum(["Morning", "Afternoon", "Evening"]),
+  preferredCallbackTime: z.enum(["Morning", "Afternoon", "Evening"]),
   projectDescription: z
     .string()
     .min(1, "Brief Description of Your Project is required"),
@@ -44,16 +41,18 @@ const RequestSchema = z.object({
       { message: "Estimated Budget Range is required" },
     ),
   howDidYouHearAboutUs: z
-    .enum([
-      "Internet Search",
-      "Social Media",
-      "Referral",
-      "Advertisement",
-      "Other",
-    ])
-    .optional()
-    .nullable(),
-  otherHearAboutDetails: z.string().optional().nullable(),
+    .string()
+    .refine(
+      (value) =>
+        [
+          "Internet Search",
+          "Social Media",
+          "Referral",
+          "Advertisement",
+          "Other",
+        ].includes(value),
+      { message: "How Did You Hear About Us is required" },
+    ),
 });
 
 export default RequestSchema;

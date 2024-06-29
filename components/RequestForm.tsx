@@ -2,6 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { z } from "zod";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -26,7 +27,7 @@ import RequestSchema from "@/schema/index";
 import { Label } from "@/components/ui/label";
 
 export default function RequestForm() {
-  const form = useForm({
+  const form = useForm<z.infer<typeof RequestSchema>>({
     resolver: zodResolver(RequestSchema),
     defaultValues: {
       fullName: "",
@@ -38,13 +39,13 @@ export default function RequestForm() {
       preferredCallbackTime: "Morning",
       projectDescription: "",
       budgetRange: "",
-      howDidYouHearAboutUs: "Internet Search",
+      howDidYouHearAboutUs: "",
     },
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
-  };
+  function onSubmit(values: z.infer<typeof RequestSchema>) {
+    console.log(values);
+  }
 
   return (
     <Form {...form}>
@@ -246,22 +247,24 @@ export default function RequestForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel>How Did You Hear About Us?</FormLabel>
-              <FormControl>
-                <Select {...field}>
+
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
                   <SelectTrigger className="w-full">
                     <SelectValue placeholder="Select an option" />
                   </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="Internet Search">
-                      Internet Search
-                    </SelectItem>
-                    <SelectItem value="Social Media">Social Media</SelectItem>
-                    <SelectItem value="Referral">Referral</SelectItem>
-                    <SelectItem value="Advertisement">Advertisement</SelectItem>
-                    <SelectItem value="Other">Other</SelectItem>
-                  </SelectContent>
-                </Select>
-              </FormControl>
+                </FormControl>
+                <SelectContent>
+                  <SelectItem value="Internet Search">
+                    Internet Search
+                  </SelectItem>
+                  <SelectItem value="Social Media">Social Media</SelectItem>
+                  <SelectItem value="Referral">Referral</SelectItem>
+                  <SelectItem value="Advertisement">Advertisement</SelectItem>
+                  <SelectItem value="Other">Other</SelectItem>
+                </SelectContent>
+              </Select>
+
               <FormMessage />
             </FormItem>
           )}
