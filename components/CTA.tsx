@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "./Button";
+import ConsultationButton from "./ConsultationButton";
 
 const CTA = () => {
   return (
@@ -17,7 +17,7 @@ const CTA = () => {
             renovation, we're here to help you every step of the way.
           </p>
           <div className="flex items-center gap-4 md:gap-8">
-            <Button type="button" title="Request a Free Consultation" />
+            <ConsultationButton title="Request a Free Consultation" />
           </div>
         </div>
       </div>

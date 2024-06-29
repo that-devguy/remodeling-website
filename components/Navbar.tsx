@@ -2,7 +2,7 @@ import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Button from "./Button";
+import ConsultationButton from "./ConsultationButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -27,7 +27,7 @@ const Navbar = () => {
       </Link>
 
       <div className="my-auto ml-auto hidden justify-between gap-4 lg:flex xl:gap-12">
-        <ul className="text-sm font-base my-auto hidden h-full gap-4 lg:flex xl:gap-12">
+        <ul className="font-base my-auto hidden h-full gap-4 text-sm lg:flex xl:gap-12">
           {NAV_LINKS.map((link) => (
             <Link
               href={link.href}
@@ -38,7 +38,7 @@ const Navbar = () => {
             </Link>
           ))}
         </ul>
-        <Button type="button" title="Get a Consultation" />
+        <ConsultationButton title="Get a Consultation" />
       </div>
 
       {/* mobile nav menu */}

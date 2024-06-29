@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Button from "./Button";
+import ConsultationButton from "./ConsultationButton";
 import Link from "next/link";
 import ProjectCarousel from "./ProjectCarousel";
 
@@ -19,7 +19,7 @@ const Hero = () => {
             brings your vision to life.
           </p>
           <div className="flex items-center gap-4 md:gap-8">
-            <Button type="button" title="Request a Free Consultation" />
+            <ConsultationButton title="Request a Free Consultation" />
             <Link
               className="text-sm font-bold text-brand-primary underline underline-offset-4 md:text-base"
               href="/"
@@ -29,7 +29,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="flex h-full items-center sm:w-1/3 select-none">
+        <div className="flex h-full select-none items-center sm:w-1/3">
           <ProjectCarousel />
         </div>
       </div>
