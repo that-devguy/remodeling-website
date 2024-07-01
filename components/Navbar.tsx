@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="max-container padding-container z-30 flex justify-between bg-white px-2 py-5 sm:px-10">
       <Link
         href="/"
-        className="hidden rounded-sm focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 sm:flex"
+        className="hidden rounded-sm focus:border-neutral-200 focus:ring-0 focus-visible:outline-none focus-visible:ring-offset-2 sm:flex"
       >
         <Image
           src="/kitts-blue-logo.png"
@@ -22,7 +22,7 @@ const Navbar = () => {
       </Link>
       <Link
         href="/"
-        className="flex rounded-sm pl-1 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 sm:hidden"
+        className="flex rounded-sm pl-1 focus:border-neutral-200 focus:ring-0 focus-visible:outline-none focus-visible:ring-offset-2 sm:hidden"
       >
         <Image
           src="/kitts-small-blue-logo.png"
@@ -38,7 +38,7 @@ const Navbar = () => {
             <Link
               href={link.href}
               key={link.key}
-              className="cursor-pointer rounded-sm px-1 text-black/50 transition-all hover:text-black focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2"
+              className="cursor-pointer rounded-sm px-1 text-black/50 transition-all hover:text-black"
             >
               {link.label}
             </Link>
