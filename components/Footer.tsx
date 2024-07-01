@@ -8,37 +8,64 @@ const Footer = () => {
       <div className="mb-6 flex flex-col justify-start gap-2 p-4 md:flex-row md:gap-32 lg:hidden">
         <ul className="flex flex-col gap-2 text-white">
           <p className="text-lg font-bold">Company</p>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             About
           </Link>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             FAQ
           </Link>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             Careers
           </Link>
         </ul>
         <ul className="flex flex-col gap-2 text-white">
           <p className="text-lg font-bold">Services</p>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             Kitchens
           </Link>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             Bathrooms
           </Link>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             Backyards
           </Link>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             Basements
           </Link>
         </ul>
         <ul className="flex flex-col gap-2 text-white">
           <p className="text-lg font-bold">Contact</p>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             (800) 555‑0100
           </Link>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             hello@kittsremodeling.com
           </Link>
         </ul>
@@ -67,37 +94,64 @@ const Footer = () => {
       <div className="hidden w-2/3 justify-end gap-16 p-4 lg:flex xl:gap-32">
         <ul className="flex flex-col gap-2 text-white">
           <p className="text-lg font-bold">Company</p>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             About
           </Link>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             FAQ
           </Link>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             Careers
           </Link>
         </ul>
         <ul className="flex flex-col gap-2 text-white">
           <p className="text-lg font-bold">Services</p>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             Kitchens
           </Link>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             Bathrooms
           </Link>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             Backyards
           </Link>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             Basements
           </Link>
         </ul>
         <ul className="flex flex-col gap-2 text-white">
           <p className="text-lg font-bold">Contact</p>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             (800) 555‑0100
           </Link>
-          <Link href="/" className="text-white/50 hover:text-white text-sm">
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             hello@kittsremodeling.com
           </Link>
         </ul>

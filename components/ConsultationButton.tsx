@@ -16,8 +16,8 @@ type ButtonProps = {
 const Button = ({ title }: ButtonProps) => {
   return (
     <Dialog>
-      <DialogTrigger>
-        <div className="md:text-md rounded-md bg-[#116ed1] px-5 py-3 text-sm font-bold text-white md:px-8 hover:bg-[#0f5eb7]">
+      <DialogTrigger className="rounded-md focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2">
+        <div className="md:text-md rounded-md bg-[#116ed1] px-5 py-3 text-sm font-bold text-white hover:bg-[#0f5eb7] md:px-8">
           {title}
         </div>
       </DialogTrigger>
@@ -27,7 +27,10 @@ const Button = ({ title }: ButtonProps) => {
             Request a Free Consultation
           </DialogTitle>
           <DialogDescription>
-            <p className="mb-8">We typically respond to your request for a consultation within 1 business day.</p>
+            <p className="mb-8">
+              We typically respond to your request for a consultation within 1
+              business day.
+            </p>
             <RequestForm />
           </DialogDescription>
         </DialogHeader>

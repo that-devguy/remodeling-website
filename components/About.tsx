@@ -30,7 +30,7 @@ const About = () => {
             customer service.
           </p>
           <Link
-            className="text-sm font-bold text-brand-primary underline underline-offset-4 md:text-base"
+            className="mr-auto flex rounded-sm px-1 text-sm font-bold text-brand-primary underline underline-offset-4 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 md:text-base"
             href="/"
             key="projects"
           >

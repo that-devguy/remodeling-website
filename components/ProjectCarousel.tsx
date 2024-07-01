@@ -53,19 +53,21 @@ export default function ProjectCarousel() {
 
               <div className="py-4 sm:p-4">
                 <h5 className="font-medium sm:text-lg">{project.type}</h5>
-                <p className="text-sm text-black/50">{project.name}'s {project.description}.</p>
+                <p className="text-sm text-black/50">
+                  {project.name}'s {project.description}.
+                </p>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="mt-6 flex items-center justify-between">
+      <div className="mb-2 mt-6 flex items-center justify-between">
         <div className="embla__dots flex items-center sm:px-4">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}
-              className={`embla__dot ${index === selectedIndex ? "embla__dot--selected" : ""}`}
+              className={`embla__dot ${index === selectedIndex ? "embla__dot--selected" : ""} rounded-md focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2`}
             />
           ))}
         </div>

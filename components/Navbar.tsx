@@ -9,7 +9,10 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   return (
     <nav className="max-container padding-container z-30 flex justify-between bg-white px-2 py-5 sm:px-10">
-      <Link href="/" className="hidden sm:flex sm:w-1/3">
+      <Link
+        href="/"
+        className="hidden rounded-sm focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 sm:flex"
+      >
         <Image
           src="/kitts-blue-logo.png"
           alt="logo"
@@ -17,7 +20,10 @@ const Navbar = () => {
           width={200}
         ></Image>
       </Link>
-      <Link href="/" className="flex sm:hidden pl-1">
+      <Link
+        href="/"
+        className="flex rounded-sm pl-1 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 sm:hidden"
+      >
         <Image
           src="/kitts-small-blue-logo.png"
           alt="logo"
@@ -32,7 +38,7 @@ const Navbar = () => {
             <Link
               href={link.href}
               key={link.key}
-              className="cursor-pointer text-black/50 transition-all hover:text-black"
+              className="cursor-pointer rounded-sm px-1 text-black/50 transition-all hover:text-black focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2"
             >
               {link.label}
             </Link>

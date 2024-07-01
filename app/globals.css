@@ -12,6 +12,12 @@
   box-sizing: border-box;
 }
 
+footer :focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: .125rem;
+}
+
+
 body {
   font-family: "Inter", sans-serif;
 }

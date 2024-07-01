@@ -35,8 +35,8 @@ const DialogContent = React.forwardRef<
       <DialogPrimitive.Content
         ref={ref}
         className={cn(
-          "relative z-50 grid w-full max-w-2xl gap-4 border border-neutral-200 bg-white p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-bottom-full data-[state=open]:slide-in-from-bottom-full dark:border-neutral-800 dark:bg-neutral-950 sm:rounded-lg",
-          "sm:m-4", // Add margin for small screens
+          "relative z-50 mx-5 my-20 grid max-w-2xl gap-4 rounded-lg border border-neutral-200 bg-white p-6 shadow-lg duration-100 data-[state=closed]:fade-out data-[state=open]:fade-in dark:border-neutral-800 dark:bg-neutral-950",
+          "sm:m-4",
           className,
         )}
         {...props}

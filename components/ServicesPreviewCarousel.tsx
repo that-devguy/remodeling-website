@@ -36,18 +36,18 @@ export default function EmblaCarousel() {
           ))}
         </div>
       </div>
-      <div className="mt-6 flex items-center justify-between">
+      <div className="mb-2 mt-6 flex items-center justify-between">
         <div className="embla__dots flex items-center">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}
-              className={`embla__dot ${index === selectedIndex ? "embla__dot--selected" : ""}`}
+              className={`embla__dot ${index === selectedIndex ? "embla__dot--selected" : ""} rounded-md focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2`}
             />
           ))}
         </div>
         <Link
-          className="text-sm font-bold text-brand-primary underline underline-offset-4 md:text-base"
+          className="rounded-sm px-1 text-sm font-bold text-brand-primary underline underline-offset-4 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 md:text-base"
           href="/"
         >
           Browse All Services

@@ -2,29 +2,50 @@
   {
     "id": "1",
     "isFavorite": true,
-    "name": "Kitchen Remodel",
+    "name": "Kitchen Remodeling",
     "description": "Transform your kitchen into a culinary haven with our expert design and craftsmanship. From modern upgrades to complete overhauls, we make your dream kitchen a reality.",
     "coverPhoto": "/kitchen-2.jpeg"
   },
   {
     "id": "2",
     "isFavorite": true,
-    "name": "Bathroom Renovation",
+    "name": "Bathroom Remodeling",
     "description": "Transform your bathroom into a luxurious spa-like retreat. Our custom remodeling services blend functionality and elegance, enhancing your daily routine.",
     "coverPhoto": "/bathroom-1.jpeg"
   },
   {
     "id": "3",
     "isFavorite": true,
-    "name": "Floor Installation",
-    "description": "Upgrade your home with our professional floor installation services. From hardwood to tile, we ensure quality and precision for a beautiful, lasting finish.",
+    "name": "Carpentry",
+    "description": "Enhance your home with our expert carpentry and floor installation services. Whether it's hardwood, tile, or custom carpentry work, we ensure quality and precision for a beautiful, lasting finish.",
     "coverPhoto": "/floors-1.jpeg"
   },
   {
     "id": "4",
     "isFavorite": true,
-    "name": "Deck Construction",
+    "name": "Decks & Railing",
     "description": "Extend your living space outdoors with our custom deck construction. We create durable and stylish decks that provide the perfect setting for relaxation and entertainment.",
     "coverPhoto": "/deck-1.jpg"
+  },
+  {
+    "id": "5",
+    "isFavorite": false,
+    "name": "Full Home Remodeling",
+    "description": "",
+    "coverPhoto": ""
+  },
+  {
+    "id": "6",
+    "isFavorite": false,
+    "name": "Cabinetry",
+    "description": "",
+    "coverPhoto": ""
+  },
+  {
+    "id": "7",
+    "isFavorite": false,
+    "name": "Common Area Remodeling",
+    "description": "",
+    "coverPhoto": ""
   }
 ]
