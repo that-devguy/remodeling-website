@@ -17,12 +17,12 @@ const Navbar = () => {
           width={200}
         ></Image>
       </Link>
-      <Link href="/" className="flex sm:hidden">
+      <Link href="/" className="flex sm:hidden pl-1">
         <Image
           src="/kitts-small-blue-logo.png"
           alt="logo"
-          height={75}
-          width={75}
+          height={50}
+          width={50}
         ></Image>
       </Link>
 

@@ -21,7 +21,7 @@ const Button = ({ title }: ButtonProps) => {
           {title}
         </div>
       </DialogTrigger>
-      <DialogContent className="">
+      <DialogContent>
         <DialogHeader>
           <DialogTitle className="font-medium">
             Request a Free Consultation
