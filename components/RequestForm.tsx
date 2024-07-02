@@ -51,7 +51,7 @@ export default function RequestForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="grid grid-cols-1 gap-8 sm:grid-cols-2"
+        className="grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2"
       >
         <FormField
           control={form.control}

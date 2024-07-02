@@ -38,7 +38,7 @@ const Navbar = () => {
             <Link
               href={link.href}
               key={link.key}
-              className="cursor-pointer rounded-sm px-1 text-black/50 transition-all hover:text-black"
+              className="cursor-pointer rounded-sm px-1 text-black/50 transition-all hover:font-medium hover:text-black"
             >
               {link.label}
             </Link>

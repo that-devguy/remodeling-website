@@ -27,7 +27,7 @@ const Button = ({ title }: ButtonProps) => {
             Request a Free Consultation
           </DialogTitle>
           <DialogDescription>
-            <p className="mb-8">
+            <p className="mb-8 text-xs">
               We typically respond to your request for a consultation within 1
               business day.
             </p>
