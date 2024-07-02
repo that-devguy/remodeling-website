@@ -11,7 +11,7 @@ const Projects = () => {
         <h2 className="title mr-auto text-2xl font-bold uppercase italic text-brand-primary sm:text-2xl lg:text-4xl 2xl:text-5xl">
           Projects
         </h2>
-        <div className="w-full grid grid-cols-4 gap-4">
+        <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}

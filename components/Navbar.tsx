@@ -33,8 +33,8 @@ const Navbar = () => {
         ></Image>
       </Link>
 
-      <div className="my-auto ml-auto hidden justify-between gap-4 lg:flex xl:gap-12">
-        <ul className="font-base my-auto hidden h-full gap-4 text-sm lg:flex xl:gap-12">
+      <div className="my-auto ml-auto hidden justify-between gap-4 lg:flex xl:gap-8">
+        <ul className="font-base my-auto hidden h-full gap-4 text-sm lg:flex xl:gap-8">
           {NAV_LINKS.map((link) => (
             <Link
               href={link.href}

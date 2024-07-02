@@ -22,7 +22,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   const desc = capitalizeFirstLetter(description);
   return (
-    <div className="flex max-w-[400px] select-none flex-col rounded-b-lg bg-white shadow-lg">
+    <div className="flex select-none flex-col rounded-b-lg bg-white shadow-lg">
       <Image
         src={coverPhoto}
         alt={type}
