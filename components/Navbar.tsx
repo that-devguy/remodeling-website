@@ -14,7 +14,7 @@ const Navbar = () => {
         className="hidden rounded-sm focus:border-neutral-200 focus:ring-0 focus-visible:outline-none focus-visible:ring-offset-2 sm:flex"
       >
         <Image
-          src="/kitts-blue-logo.png"
+          src="/kitts-logo-blue.png"
           alt="logo"
           height={67.03}
           width={200}
@@ -22,13 +22,14 @@ const Navbar = () => {
       </Link>
       <Link
         href="/"
-        className="flex rounded-sm pl-1 focus:border-neutral-200 focus:ring-0 focus-visible:outline-none focus-visible:ring-offset-2 sm:hidden"
+        className="flex rounded-sm focus:border-neutral-200 focus:ring-0 focus-visible:outline-none focus-visible:ring-offset-2 sm:hidden"
       >
         <Image
           src="/kitts-small-blue-logo.png"
           alt="logo"
           height={50}
           width={50}
+          className="ml-2"
         ></Image>
       </Link>
 
