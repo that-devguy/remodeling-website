@@ -42,8 +42,8 @@ const ServicesPreview = () => {
           </div>
           <Link
             className="ml-auto hidden rounded-sm px-1 text-sm font-bold text-brand-primary underline underline-offset-4 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 sm:flex md:text-base"
-            href="/"
-            key="projects"
+            href="/services"
+            key="services"
           >
             Browse All Services
           </Link>

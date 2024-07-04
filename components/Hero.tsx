@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="mx-auto flex flex-col items-center">
       <div className="flex min-h-screen-minus-nav max-w-[1920px] flex-col items-center justify-center gap-8 overflow-hidden p-4 sm:flex-row sm:justify-between sm:p-10">
         <div className="flex flex-col gap-8 sm:w-1/2">
-          <h1 className="title mr-auto text-3xl font-bold uppercase italic text-brand-primary sm:text-4xl lg:text-5xl 2xl:text-7xl">
+          <h1 className="title mr-auto text-4xl font-bold uppercase italic text-brand-primary sm:text-4xl lg:text-6xl 2xl:text-7xl">
             Redefine Your Home’s Potential with Kitts Remodeling
           </h1>
           <p className="sm:my-6">

@@ -16,7 +16,7 @@ const Navbar = () => {
         <Image
           src="/kitts-logo-blue.png"
           alt="logo"
-          height={67.03}
+          height={50}
           width={200}
         ></Image>
       </Link>
