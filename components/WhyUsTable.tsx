@@ -15,7 +15,6 @@ import { faCircleCheck, faMinus } from "@fortawesome/free-solid-svg-icons";
 const kittsPerks = [
   "Over 25 years of expertise",
   "Full range of remodeling services",
-  "Transparent and fair pricing",
   "Tailored to your needs and style",
   "Attention to detail and quality",
   "Regular updates and clear communication",
