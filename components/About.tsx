@@ -13,7 +13,7 @@ const About = () => {
               alt="kitchen-1"
               width="640"
               height="400"
-              className="w-full rounded-lg object-cover sm:h-[330px] 2xl:h-[430px]"
+              className="w-full rounded-md object-cover sm:h-[330px] 2xl:h-[430px]"
             />
           </div>
         </div>
@@ -30,7 +30,7 @@ const About = () => {
             customer service.
           </p>
           <Link
-            className="mr-auto flex rounded-sm px-1 text-sm font-bold text-brand-primary underline underline-offset-4 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 md:text-base"
+            className="mr-auto flex rounded-sm px-1 text-sm font-medium text-brand-primary underline underline-offset-4 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 md:text-base"
             href="/"
             key="projects"
           >

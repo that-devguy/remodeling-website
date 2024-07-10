@@ -28,11 +28,11 @@ const ServicesPreview = () => {
                     alt="kitchen-2"
                     width="350"
                     height="350"
-                    className="aspect-[3/5] max-h-[191px] rounded-lg object-cover md:max-h-[330px]"
+                    className="aspect-[3/5] max-h-[191px] rounded-md object-cover md:max-h-[330px]"
                   />
                   <div className="pt-4">
                     <h5 className="font-medium sm:text-lg">{service.name}</h5>
-                    <p className="text-sm text-black/50">
+                    <p className="text-sm text-black/50 lg:text-base">
                       {service.description}
                     </p>
                   </div>
@@ -41,7 +41,7 @@ const ServicesPreview = () => {
             </ul>
           </div>
           <Link
-            className="ml-auto hidden rounded-sm px-1 text-sm font-bold text-brand-primary underline underline-offset-4 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 sm:flex md:text-base"
+            className="ml-auto hidden rounded-sm px-1 text-sm font-medium text-brand-primary underline underline-offset-4 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 sm:flex md:text-base"
             href="/services"
             key="services"
           >

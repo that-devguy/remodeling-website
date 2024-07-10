@@ -164,7 +164,7 @@ export default function RequestForm() {
             </FormItem>
           )}
         />
-        <FormField
+        {/* <FormField
           control={form.control}
           name="typeOfProject"
           render={({ field }) => (
@@ -268,8 +268,8 @@ export default function RequestForm() {
               <FormMessage />
             </FormItem>
           )}
-        />
-        <div className="col-span-1 md:col-span-2">
+        /> */}
+        <div className="col-span-1 md:col-span-2 mt-4">
           <Button type="submit">Submit</Button>
         </div>
       </form>

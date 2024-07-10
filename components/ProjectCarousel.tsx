@@ -40,7 +40,7 @@ export default function ProjectCarousel() {
                   alt={project.name}
                   height={430}
                   width={500}
-                  className="h-[215px] rounded-lg object-cover sm:h-[330px] 2xl:h-[430px]"
+                  className="h-[215px] rounded-md object-cover sm:h-[330px] 2xl:h-[430px]"
                 />
                 {hoveredIndex === index && (
                   <Link href="/">

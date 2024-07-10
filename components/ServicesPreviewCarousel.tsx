@@ -26,7 +26,7 @@ export default function EmblaCarousel() {
                 alt={service.name}
                 width="350"
                 height="350"
-                className="mr-2 aspect-[3/5] max-h-[191px] w-full rounded-lg object-cover md:max-h-[330px]"
+                className="mr-2 aspect-[3/5] max-h-[191px] w-full rounded-md object-cover md:max-h-[330px]"
               />
               <div className="pt-4">
                 <h5 className="font-medium sm:text-lg">{service.name}</h5>

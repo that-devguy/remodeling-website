@@ -1,3 +1,4 @@
+"use client";
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,6 +6,16 @@ import React from "react";
 import ConsultationButton from "./ConsultationButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { cn } from "@/lib/utils";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
 
 const Navbar = () => {
   return (
@@ -34,17 +45,59 @@ const Navbar = () => {
       </Link>
 
       <div className="my-auto ml-auto hidden justify-between gap-4 lg:flex xl:gap-8">
-        <ul className="font-base my-auto hidden h-full gap-4 text-sm lg:flex xl:gap-8">
+        <NavigationMenu>
+          <NavigationMenuList>
+            <NavigationMenuItem>
+              <Link href="/" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  Home
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                  <ListItem href="/docs" title="Kitchen Remodeling">
+                    <p className="text-black/50">
+                      Re-usable components built using Radix UI and Tailwind
+                      CSS.
+                    </p>
+                  </ListItem>
+                  <ListItem href="/docs" title="Bathroom Remodeling">
+                    <p className="text-black/50">
+                      Re-usable components built using Radix UI and Tailwind
+                      CSS.
+                    </p>
+                  </ListItem>
+                  <ListItem href="/docs" title="Carpentry">
+                    <p className="text-black/50">
+                      Re-usable components built using Radix UI and Tailwind
+                      CSS.
+                    </p>
+                  </ListItem>
+                  <ListItem href="/docs" title="Decks + Railings">
+                    <p className="text-black/50">
+                      Re-usable components built using Radix UI and Tailwind
+                      CSS.
+                    </p>
+                  </ListItem>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
+        {/* <ul className="font-base my-auto hidden h-full gap-4 text-sm lg:flex xl:gap-8">
           {NAV_LINKS.map((link) => (
             <Link
               href={link.href}
               key={link.key}
-              className="cursor-pointer rounded-sm px-1 text-black/50 transition-all hover:font-medium hover:text-black"
+              className="cursor-pointer rounded-sm px-2 text-black/50 transition-all hover:text-black"
             >
               {link.label}
             </Link>
           ))}
-        </ul>
+        </ul> */}
         <ConsultationButton title="Get a Consultation" />
       </div>
 
@@ -58,5 +111,31 @@ const Navbar = () => {
     </nav>
   );
 };
+
+const ListItem = React.forwardRef<
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a">
+>(({ className, title, children, ...props }, ref) => {
+  return (
+    <li>
+      <NavigationMenuLink asChild>
+        <a
+          ref={ref}
+          className={cn(
+            "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors",
+            className,
+          )}
+          {...props}
+        >
+          <div className="text-sm font-medium leading-none">{title}</div>
+          <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
+            {children}
+          </p>
+        </a>
+      </NavigationMenuLink>
+    </li>
+  );
+});
+ListItem.displayName = "ListItem";
 
 export default Navbar;
