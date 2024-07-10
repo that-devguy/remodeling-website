@@ -23,8 +23,8 @@ const Hero = () => {
             <ConsultationButton title="Request a Free Consultation" />
             <Link
               className="rounded-sm px-1 text-sm font-medium text-brand-primary underline underline-offset-4 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 md:text-base"
-              href="/projects"
-              key="projects"
+              href="/portfolio"
+              key="portfolio"
             >
               View Our Work
             </Link>

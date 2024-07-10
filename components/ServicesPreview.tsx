@@ -31,7 +31,7 @@ const ServicesPreview = () => {
                     className="aspect-[3/5] max-h-[191px] rounded-md object-cover md:max-h-[330px]"
                   />
                   <div className="pt-4">
-                    <h5 className="font-medium sm:text-lg">{service.name}</h5>
+                    <h5 className="font-medium sm:text-base">{service.name}</h5>
                     <p className="text-sm text-black/50 lg:text-base">
                       {service.description}
                     </p>

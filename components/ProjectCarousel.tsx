@@ -44,7 +44,7 @@ export default function ProjectCarousel() {
                 />
                 {hoveredIndex === index && (
                   <Link href="/">
-                    <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-brand-primary/75 font-bold text-white underline underline-offset-4">
+                    <div className="absolute inset-0 flex items-center justify-center rounded-md bg-brand-primary/75 font-medium text-white underline underline-offset-4">
                       View Project
                     </div>
                   </Link>
@@ -52,7 +52,7 @@ export default function ProjectCarousel() {
               </div>
 
               <div className="py-4 sm:p-4">
-                <h5 className="font-medium sm:text-lg">{project.type}</h5>
+                <h5 className="font-medium sm:text-base">{project.type}</h5>
                 <p className="text-sm text-black/50">
                   {project.name}'s {project.description}.
                 </p>

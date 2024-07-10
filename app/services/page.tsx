@@ -21,9 +21,7 @@ const Services = () => {
             <BreadcrumbItem>
               <BreadcrumbLink href="/">Home</BreadcrumbLink>
             </BreadcrumbItem>
-            <BreadcrumbSeparator>
-              <Slash />
-            </BreadcrumbSeparator>
+            <BreadcrumbSeparator></BreadcrumbSeparator>
             <BreadcrumbItem>
               <BreadcrumbLink href="/services">Services</BreadcrumbLink>
             </BreadcrumbItem>

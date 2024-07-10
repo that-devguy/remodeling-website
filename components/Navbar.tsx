@@ -1,5 +1,4 @@
 "use client";
-import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -17,9 +16,18 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+
 const Navbar = () => {
   return (
-    <nav className="max-container padding-container z-30 flex justify-between bg-white px-2 py-5 sm:px-10">
+    <nav className="max-container padding-container z-30 flex justify-between bg-white px-2 py-6 sm:px-10">
       <Link
         href="/"
         className="hidden rounded-sm focus:border-neutral-200 focus:ring-0 focus-visible:outline-none focus-visible:ring-offset-2 sm:flex"
@@ -48,38 +56,158 @@ const Navbar = () => {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
+              <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
+                  <ListItem
+                    href="/services"
+                    title="Kitchen Remodeling"
+                    className="rounded-md hover:bg-slate-100"
+                  >
+                    <p className="text-black/50">
+                      Transform your kitchen into a culinary haven with our
+                      expert design and craftsmanship. From modern upgrades to
+                      complete overhauls, we make your dream kitchen a reality.
+                    </p>
+                  </ListItem>
+                  <ListItem
+                    href="/services"
+                    title="Bathroom Remodeling"
+                    className="rounded-md hover:bg-slate-100"
+                  >
+                    <p className="text-black/50">
+                      Transform your bathroom into a luxurious spa-like retreat.
+                      Our custom remodeling services blend functionality and
+                      elegance, enhancing your daily routine.
+                    </p>
+                  </ListItem>
+                  <ListItem
+                    href="/services"
+                    title="Carpentry"
+                    className="rounded-md hover:bg-slate-100"
+                  >
+                    <p className="text-black/50">
+                      Enhance your home with our expert carpentry and floor
+                      installation services. Whether it's hardwood, tile, or
+                      custom carpentry work, we ensure quality and precision for
+                      a beautiful, lasting finish.
+                    </p>
+                  </ListItem>
+                  <ListItem
+                    href="/services"
+                    title="Decks + Railings"
+                    className="rounded-md hover:bg-slate-100"
+                  >
+                    <p className="text-black/50">
+                      Extend your living space outdoors with our custom deck
+                      construction. We create durable and stylish decks that
+                      provide the perfect setting for relaxation and
+                      entertainment.
+                    </p>
+                  </ListItem>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/portfolio" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Home
+                  Portfolio
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+              <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                  <ListItem href="/docs" title="Kitchen Remodeling">
+                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
+                  <ListItem
+                    href="/"
+                    title="About Us"
+                    className="rounded-md hover:bg-slate-100"
+                  >
                     <p className="text-black/50">
-                      Re-usable components built using Radix UI and Tailwind
-                      CSS.
+                      Learn more about Kitts Remodeling, our history, and our
+                      commitment to quality craftsmanship and honest work ethic.
                     </p>
                   </ListItem>
-                  <ListItem href="/docs" title="Bathroom Remodeling">
+                  <ListItem
+                    href="/"
+                    title="Our Process"
+                    className="rounded-md hover:bg-slate-100"
+                  >
                     <p className="text-black/50">
-                      Re-usable components built using Radix UI and Tailwind
-                      CSS.
+                      Discover our straightforward and transparent remodeling
+                      process, designed to ensure a smooth experience from start
+                      to finish.
                     </p>
                   </ListItem>
-                  <ListItem href="/docs" title="Carpentry">
+                  <ListItem
+                    href="/"
+                    title="FAQ"
+                    className="rounded-md hover:bg-slate-100"
+                  >
                     <p className="text-black/50">
-                      Re-usable components built using Radix UI and Tailwind
-                      CSS.
+                      Find answers to common questions about our services,
+                      pricing, and project timelines.
                     </p>
                   </ListItem>
-                  <ListItem href="/docs" title="Decks + Railings">
+                  <ListItem
+                    href="/"
+                    title="Careers"
+                    className="rounded-md hover:bg-slate-100"
+                  >
                     <p className="text-black/50">
-                      Re-usable components built using Radix UI and Tailwind
-                      CSS.
+                      Explore exciting career opportunities at Kitts Remodeling
+                      and join our team of skilled professionals.
+                    </p>
+                  </ListItem>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Pricing</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
+                  <ListItem
+                    href="/"
+                    title="Kitchen Pricing"
+                    className="rounded-md hover:bg-slate-100"
+                  >
+                    <p className="text-black/50">
+                      Explore our comprehensive guide to kitchen remodeling
+                      costs, including various options to fit your budget and
+                      style.
+                    </p>
+                  </ListItem>
+                  <ListItem
+                    href="/"
+                    title="Bathroom Pricing"
+                    className="rounded-md hover:bg-slate-100"
+                  >
+                    <p className="text-black/50">
+                      Discover detailed pricing information for bathroom
+                      renovations, from basic updates to complete
+                      transformations.
+                    </p>
+                  </ListItem>
+                  <ListItem
+                    href="/"
+                    title="Carpentry Pricing"
+                    className="rounded-md hover:bg-slate-100"
+                  >
+                    <p className="text-black/50">
+                      Find out the costs for our expert carpentry services,
+                      including custom cabinetry, trim work, and more.
+                    </p>
+                  </ListItem>
+                  <ListItem
+                    href="/"
+                    title="Decks + Railings Pricing"
+                    className="rounded-md hover:bg-slate-100"
+                  >
+                    <p className="text-black/50">
+                      Get detailed pricing for deck construction and railing
+                      installations, tailored to enhance your outdoor living
+                      space.
                     </p>
                   </ListItem>
                 </ul>
@@ -87,26 +215,48 @@ const Navbar = () => {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        {/* <ul className="font-base my-auto hidden h-full gap-4 text-sm lg:flex xl:gap-8">
-          {NAV_LINKS.map((link) => (
-            <Link
-              href={link.href}
-              key={link.key}
-              className="cursor-pointer rounded-sm px-2 text-black/50 transition-all hover:text-black"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </ul> */}
-        <ConsultationButton title="Get a Consultation" />
+        <p className="flex items-center text-sm font-medium">(800) 555‑0100</p>
+        <ConsultationButton title="Get A Quote" />
       </div>
 
       {/* mobile nav menu */}
       <div className="flex items-center justify-center">
-        <FontAwesomeIcon
-          icon={faBars}
-          className="mx-3 h-6 w-6 justify-center text-brand-primary lg:hidden"
-        />
+        <Sheet>
+          <SheetTrigger>
+            <FontAwesomeIcon
+              icon={faBars}
+              className="mx-3 h-6 w-6 justify-center text-brand-primary lg:hidden"
+            />
+          </SheetTrigger>
+          <SheetContent>
+            <SheetHeader>
+              <SheetTitle>
+                <Link
+                  href="/"
+                  className="rounded-sm focus:border-neutral-200 focus:ring-0 focus-visible:outline-none focus-visible:ring-offset-2 sm:flex"
+                >
+                  <Image
+                    src="/kitts-logo-blue.png"
+                    alt="logo"
+                    height={50}
+                    width={160}
+                    className="flex sm:hidden"
+                  ></Image>
+                  <Image
+                    src="/kitts-logo-blue.png"
+                    alt="logo"
+                    height={50}
+                    width={200}
+                    className="hidden sm:flex"
+                  ></Image>
+                </Link>
+              </SheetTitle>
+              <SheetDescription>
+                
+              </SheetDescription>
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>
       </div>
     </nav>
   );

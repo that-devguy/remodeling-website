@@ -18,7 +18,7 @@ const kittsPerks = [
   "Tailored to your needs and style",
   "Attention to detail and quality",
   "Regular updates and clear communication",
-  "Pet friendly"
+  "Pet friendly",
 ];
 
 const WhyUsTable = () => {
@@ -49,11 +49,11 @@ const WhyUsTable = () => {
       <TableBody>
         {kittsPerks.map((perk, index) => (
           <TableRow key={index}>
-            <TableCell className="sm:text-base text-small font-medium">{perk}</TableCell>
+            <TableCell className="text-small sm:text-base">{perk}</TableCell>
             <TableCell className="text-center">
               <FontAwesomeIcon
                 icon={faCircleCheck}
-                className="text-brand-primary mx-auto w-5 h-5"
+                className="mx-auto h-5 w-5 text-brand-primary"
               />
             </TableCell>
             <TableCell className="text-center">

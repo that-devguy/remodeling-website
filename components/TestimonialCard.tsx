@@ -34,7 +34,7 @@ const TestimonialCard = ({
       />
       <div className="p-4">
         <div className="flex items-center justify-between">
-          <h5 className="font-medium sm:text-lg">{name}</h5>
+          <h5 className="font-medium sm:text-base">{name}</h5>
           <div className="flex gap-2 text-yellow-500">
             <FontAwesomeIcon icon={faStar} className="w-4" />
             <FontAwesomeIcon icon={faStar} className="w-4" />
