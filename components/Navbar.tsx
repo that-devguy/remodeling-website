@@ -240,7 +240,7 @@ const Navbar = () => {
                     alt="logo"
                     height={50}
                     width={160}
-                    className="flex sm:hidden"
+                    className="flex pt-1 sm:hidden"
                   ></Image>
                   <Image
                     src="/kitts-logo-blue.png"
@@ -251,9 +251,7 @@ const Navbar = () => {
                   ></Image>
                 </Link>
               </SheetTitle>
-              <SheetDescription>
-                
-              </SheetDescription>
+              <SheetDescription></SheetDescription>
             </SheetHeader>
           </SheetContent>
         </Sheet>
