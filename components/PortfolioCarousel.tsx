@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/emblaCarouselDotButton";
 import projects from "../public/data/projects.json";
 
-const ProjectCarousel = ({ filterFunction }) => {
+const PortfolioCarousel = ({ filterFunction }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel();
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);
@@ -27,9 +27,9 @@ const ProjectCarousel = ({ filterFunction }) => {
   return (
     <div className="embla relative mt-4">
       <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
+        <div className="embla__container hidden pl-2 sm:my-6 sm:flex">
           {featuredProjects.map((project, index) => (
-            <div className="embla__slide" key={project.id}>
+            <div className="embla__slide !mr-6 max-w-[400px]" key={project.id}>
               <div
                 className="relative"
                 onMouseEnter={() => handleMouseEnter(index)}
@@ -40,7 +40,7 @@ const ProjectCarousel = ({ filterFunction }) => {
                   alt={project.name}
                   height={430}
                   width={500}
-                  className="h-[215px] rounded-md object-cover sm:h-[330px] 2xl:h-[430px]"
+                  className="h-[215px] rounded-md object-cover sm:h-[250px]"
                 />
                 {hoveredIndex === index && (
                   <Link href="/">
@@ -76,4 +76,4 @@ const ProjectCarousel = ({ filterFunction }) => {
   );
 };
 
-export default ProjectCarousel;
+export default PortfolioCarousel;

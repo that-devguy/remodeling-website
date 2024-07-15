@@ -2,10 +2,10 @@
   {
     "id": 1,
     "name": "John",
-    "description": "entire home renovation",
+    "description": "kitchen renovation",
     "isFavorite": true,
     "useTestimonial": true,
-    "coverPhoto": "/kitchen-2.jpeg",
+    "coverPhoto": "/kitchen-1.jpeg",
     "type": "Kitchen",
     "testimonial": "Choosing Kitts Remodeling was the best decision we made for our home renovation. Their team was professional, efficient, and truly cared about our vision. The end result exceeded our expectations and we couldn’t be happier with our new kitchen!"
   },
@@ -15,28 +15,148 @@
     "description": "kitchen renovation",
     "isFavorite": true,
     "useTestimonial": true,
-    "coverPhoto": "/kitchen-1.jpeg",
+    "coverPhoto": "/kitchen-2.jpeg",
     "type": "Kitchen",
     "testimonial": "Kitts Remodeling transformed our kitchen into an incredible space. Their attention to detail and commitment to excellence is unmatched. We love spending time cooking in our new kitchen and have received so many compliments from friends and family."
   },
   {
     "id": 3,
-    "name": "Jane",
-    "description": "shower renovation",
+    "name": "Anna",
+    "description": "kitchen renovation",
     "isFavorite": true,
     "useTestimonial": true,
-    "coverPhoto": "/bathroom-1.jpeg",
-    "type": "Bathroom",
-    "testimonial": "We had an amazing experience with Kitts Remodeling. From the initial consultation to the final touches, they were attentive, communicative, and dedicated to quality craftsmanship. Our bathroom feels like a luxury spa now. Highly recommend!"
+    "coverPhoto": "/kitchen-3.jpg",
+    "type": "Kitchen",
+    "testimonial": "Our new kitchen is everything we dreamed of! Kitts Remodeling brought our vision to life with outstanding craftsmanship."
   },
   {
     "id": 4,
+    "name": "Michael",
+    "description": "kitchen renovation",
+    "isFavorite": false,
+    "useTestimonial": true,
+    "coverPhoto": "/kitchen-4.jpg",
+    "type": "Kitchen",
+    "testimonial": "The team was professional and the end result was fantastic. Highly recommend Kitts Remodeling!"
+  },
+  {
+    "id": 5,
     "name": "Jane",
     "description": "shower renovation",
     "isFavorite": false,
-    "useTestimonial": true,
+    "useTestimonial": false,
     "coverPhoto": "/bathroom-1.jpeg",
     "type": "Bathroom",
-    "testimonial": "We had an amazing experience with Kitts Remodeling. From the initial consultation to the final touches, they were attentive, communicative, and dedicated to quality craftsmanship. Our bathroom feels like a luxury spa now. Highly recommend!"
+    "testimonial": ""
+  },
+  {
+    "id": 6,
+    "name": "Emily",
+    "description": "guest bathroom upgrade",
+    "isFavorite": false,
+    "useTestimonial": false,
+    "coverPhoto": "/bathroom-2.jpg",
+    "type": "Bathroom",
+    "testimonial": ""
+  },
+  {
+    "id": 7,
+    "name": "Tom",
+    "description": "bathroom renovation",
+    "isFavorite": false,
+    "useTestimonial": false,
+    "coverPhoto": "/bathroom-3.jpg",
+    "type": "Bathroom",
+    "testimonial": ""
+  },
+  {
+    "id": 8,
+    "name": "Sarah",
+    "description": "luxury bathroom upgrade",
+    "isFavorite": false,
+    "useTestimonial": false,
+    "coverPhoto": "/bathroom-4.jpg",
+    "type": "Bathroom",
+    "testimonial": ""
+  },
+  {
+    "id": 9,
+    "name": "Alice",
+    "description": "entire home renovation",
+    "isFavorite": false,
+    "useTestimonial": false,
+    "coverPhoto": "/home-renovation-1.jpg",
+    "type": "Home Renovation",
+    "testimonial": ""
+  },
+  {
+    "id": 10,
+    "name": "Mark",
+    "description": "entire home renovation",
+    "isFavorite": false,
+    "useTestimonial": false,
+    "coverPhoto": "/home-renovation-2.jpeg",
+    "type": "Home Renovation",
+    "testimonial": ""
+  },
+  {
+    "id": 11,
+    "name": "Lily",
+    "description": "basement remodeling",
+    "isFavorite": false,
+    "useTestimonial": false,
+    "coverPhoto": "/basement-1.jpg",
+    "type": "Home Renovation",
+    "testimonial": ""
+  },
+  {
+    "id": 12,
+    "name": "Paul",
+    "description": "basement remodeling",
+    "isFavorite": false,
+    "useTestimonial": false,
+    "coverPhoto": "/basement-2.jpg",
+    "type": "Home Renovation",
+    "testimonial": ""
+  },
+  {
+    "id": 13,
+    "name": "George",
+    "description": "interior painting",
+    "isFavorite": false,
+    "useTestimonial": false,
+    "coverPhoto": "/interior-painting-1.jpg",
+    "type": "Paint",
+    "testimonial": ""
+  },
+  {
+    "id": 14,
+    "name": "Sophia",
+    "description": "interior painting",
+    "isFavorite": false,
+    "useTestimonial": false,
+    "coverPhoto": "/interior-painting-2.jpg",
+    "type": "Paint",
+    "testimonial": ""
+  },
+  {
+    "id": 15,
+    "name": "Kevin",
+    "description": "interior painting",
+    "isFavorite": false,
+    "useTestimonial": false,
+    "coverPhoto": "/interior-painting-3.jpg",
+    "type": "Paint",
+    "testimonial": ""
+  },
+  {
+    "id": 16,
+    "name": "Rachel",
+    "description": "interior painting",
+    "isFavorite": false,
+    "useTestimonial": false,
+    "coverPhoto": "/interior-painting-4.png",
+    "type": "Paint",
+    "testimonial": ""
   }
 ]

@@ -6,7 +6,7 @@ import ConsultationButton from "./ConsultationButton";
 const CTA = () => {
   return (
     <section className="flex flex-col items-center bg-slate-100">
-      <div className="mr-auto flex max-w-[1920px] flex-col items-center justify-between gap-8 overflow-hidden p-4 py-10 sm:flex-row sm:px-10 lg:py-24 xl:gap-12">
+      <div className="flex max-w-[1920px] flex-col items-center justify-between gap-8 overflow-hidden p-4 py-10 sm:flex-row sm:px-10 lg:py-24 xl:gap-12">
         <div className="flex flex-col gap-4 md:w-2/3 md:gap-2 xl:gap-8">
           <h2 className="title mr-auto text-2xl font-bold uppercase italic text-brand-primary sm:text-2xl lg:text-4xl 2xl:text-5xl">
             Start Your Dream Home Transformation Today

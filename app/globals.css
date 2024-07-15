@@ -84,6 +84,12 @@ nav :focus {
   /* Add margin to create space between the slides */
 }
 
+.embla__slide2 {
+  min-width: 0;
+  margin-right: 5%;
+  /* Add margin to create space between the slides */
+}
+
 .embla__dots {
   display: flex;
   justify-content: start;

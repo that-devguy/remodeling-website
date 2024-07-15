@@ -18,6 +18,12 @@ const Footer = () => {
             href="/"
             className="px-1 text-sm text-white/50 hover:text-white"
           >
+            Our Process
+          </Link>
+          <Link
+            href="/"
+            className="px-1 text-sm text-white/50 hover:text-white"
+          >
             FAQ
           </Link>
           <Link
@@ -33,25 +39,25 @@ const Footer = () => {
             href="/"
             className="px-1 text-sm text-white/50 hover:text-white"
           >
-            Kitchens
+            Kitchen Remodeling
           </Link>
           <Link
             href="/"
             className="px-1 text-sm text-white/50 hover:text-white"
           >
-            Bathrooms
+            Bathroom Remodeling
           </Link>
           <Link
             href="/"
             className="px-1 text-sm text-white/50 hover:text-white"
           >
-            Backyards
+            Home Renovations
           </Link>
           <Link
             href="/"
             className="px-1 text-sm text-white/50 hover:text-white"
           >
-            Basements
+            Interior Painting
           </Link>
         </ul>
         <ul className="flex flex-col gap-2 text-white">
@@ -69,6 +75,14 @@ const Footer = () => {
             hello@kittsremodeling.com
           </Link>
         </ul>
+        <div className="mt-6">
+          <p className="text-sm text-white">
+            Disclaimer: All images used on this website are for design concept
+            purposes only. We do not own the rights to these images. If you are
+            the owner of any of these images and wish for them to be removed,
+            please contact us.
+          </p>
+        </div>
       </div>
       <div className="flex flex-col justify-between gap-10 lg:w-1/3">
         <p className="hidden py-4 text-white lg:flex">
@@ -91,70 +105,86 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="hidden w-2/3 justify-end gap-16 p-4 lg:flex xl:gap-32">
-        <ul className="flex flex-col gap-2 text-white">
-          <p className="text-lg font-bold">Company</p>
-          <Link
-            href="/"
-            className="px-1 text-sm text-white/50 hover:text-white"
-          >
-            About
-          </Link>
-          <Link
-            href="/"
-            className="px-1 text-sm text-white/50 hover:text-white"
-          >
-            FAQ
-          </Link>
-          <Link
-            href="/"
-            className="px-1 text-sm text-white/50 hover:text-white"
-          >
-            Careers
-          </Link>
-        </ul>
-        <ul className="flex flex-col gap-2 text-white">
-          <p className="text-lg font-bold">Services</p>
-          <Link
-            href="/"
-            className="px-1 text-sm text-white/50 hover:text-white"
-          >
-            Kitchens
-          </Link>
-          <Link
-            href="/"
-            className="px-1 text-sm text-white/50 hover:text-white"
-          >
-            Bathrooms
-          </Link>
-          <Link
-            href="/"
-            className="px-1 text-sm text-white/50 hover:text-white"
-          >
-            Backyards
-          </Link>
-          <Link
-            href="/"
-            className="px-1 text-sm text-white/50 hover:text-white"
-          >
-            Basements
-          </Link>
-        </ul>
-        <ul className="flex flex-col gap-2 text-white">
-          <p className="text-lg font-bold">Contact</p>
-          <Link
-            href="/"
-            className="px-1 text-sm text-white/50 hover:text-white"
-          >
-            (800) 555‑0100
-          </Link>
-          <Link
-            href="/"
-            className="px-1 text-sm text-white/50 hover:text-white"
-          >
-            hello@kittsremodeling.com
-          </Link>
-        </ul>
+      <div className="hidden w-2/3 justify-end gap-16 p-4 lg:flex lg:flex-col pb-0">
+        <div className="hidden justify-end lg:flex xl:gap-32">
+          <ul className="flex flex-col gap-2 text-white">
+            <p className="text-lg font-bold">Company</p>
+            <Link
+              href="/"
+              className="px-1 text-sm text-white/50 hover:text-white"
+            >
+              About
+            </Link>
+            <Link
+              href="/"
+              className="px-1 text-sm text-white/50 hover:text-white"
+            >
+              Our Process
+            </Link>
+            <Link
+              href="/"
+              className="px-1 text-sm text-white/50 hover:text-white"
+            >
+              FAQ
+            </Link>
+            <Link
+              href="/"
+              className="px-1 text-sm text-white/50 hover:text-white"
+            >
+              Careers
+            </Link>
+          </ul>
+          <ul className="flex flex-col gap-2 text-white">
+            <p className="text-lg font-bold">Services</p>
+            <Link
+              href="/"
+              className="px-1 text-sm text-white/50 hover:text-white"
+            >
+              Kitchen Remodeling
+            </Link>
+            <Link
+              href="/"
+              className="px-1 text-sm text-white/50 hover:text-white"
+            >
+              Bathroom Remodeling
+            </Link>
+            <Link
+              href="/"
+              className="px-1 text-sm text-white/50 hover:text-white"
+            >
+              Home Renovations
+            </Link>
+            <Link
+              href="/"
+              className="px-1 text-sm text-white/50 hover:text-white"
+            >
+              Interior Painting
+            </Link>
+          </ul>
+          <ul className="flex flex-col gap-2 text-white">
+            <p className="text-lg font-bold">Contact</p>
+            <Link
+              href="/"
+              className="px-1 text-sm text-white/50 hover:text-white"
+            >
+              (800) 555‑0100
+            </Link>
+            <Link
+              href="/"
+              className="px-1 text-sm text-white/50 hover:text-white"
+            >
+              hello@kittsremodeling.com
+            </Link>
+          </ul>
+        </div>
+        <div className="ml-auto flex w-2/3 text-sm text-white">
+          <p>
+            Disclaimer: All images used on this website are for design concept
+            purposes only. We do not own the rights to these images. If you are
+            the owner of any of these images and wish for them to be removed,
+            please contact us.
+          </p>
+        </div>
       </div>
     </footer>
   );

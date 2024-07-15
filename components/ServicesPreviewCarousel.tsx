@@ -13,13 +13,11 @@ export default function EmblaCarousel() {
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);
 
-  const featuredServices = services.filter((service) => service.isFavorite);
-
   return (
     <div className="embla mt-4 sm:hidden">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {featuredServices.map((service, index) => (
+          {services.map((service, index) => (
             <div className="embla__slide" key={service.id}>
               <Image
                 src={service.coverPhoto}
@@ -28,9 +26,19 @@ export default function EmblaCarousel() {
                 height="350"
                 className="mr-2 aspect-[3/5] max-h-[191px] w-full rounded-md object-cover md:max-h-[330px]"
               />
-              <div className="pt-4">
-                <h5 className="font-medium sm:text-lg">{service.name}</h5>
-                <p className="text-sm text-black/50">{service.description}</p>
+              <div className="flex flex-col gap-2 pt-4">
+                <h5 className="font-medium sm:text-base">{service.name}</h5>
+                <p className="text-sm text-black/50 lg:text-base">
+                  {service.description}
+                </p>
+                {service.url && (
+                  <Link
+                    className="rounded-sm text-left text-sm font-medium text-brand-primary underline underline-offset-4 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 sm:flex md:text-base"
+                    href={service.url}
+                  >
+                    Read More
+                  </Link>
+                )}
               </div>
             </div>
           ))}
@@ -46,12 +54,6 @@ export default function EmblaCarousel() {
             />
           ))}
         </div>
-        <Link
-          className="rounded-sm px-1 text-sm font-bold text-brand-primary underline underline-offset-4 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 md:text-base"
-          href="/"
-        >
-          Browse All Services
-        </Link>
       </div>
     </div>
   );

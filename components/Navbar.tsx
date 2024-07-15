@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import React from "react";
+import services from "@/public/data/services.json";
 import ConsultationButton from "./ConsultationButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -60,52 +61,16 @@ const Navbar = () => {
               <NavigationMenuTrigger>Services</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
-                  <ListItem
-                    href="/services"
-                    title="Kitchen Remodeling"
-                    className="rounded-md hover:bg-slate-100"
-                  >
-                    <p className="text-black/50">
-                      Transform your kitchen into a culinary haven with our
-                      expert design and craftsmanship. From modern upgrades to
-                      complete overhauls, we make your dream kitchen a reality.
-                    </p>
-                  </ListItem>
-                  <ListItem
-                    href="/services"
-                    title="Bathroom Remodeling"
-                    className="rounded-md hover:bg-slate-100"
-                  >
-                    <p className="text-black/50">
-                      Transform your bathroom into a luxurious spa-like retreat.
-                      Our custom remodeling services blend functionality and
-                      elegance, enhancing your daily routine.
-                    </p>
-                  </ListItem>
-                  <ListItem
-                    href="/services"
-                    title="Carpentry"
-                    className="rounded-md hover:bg-slate-100"
-                  >
-                    <p className="text-black/50">
-                      Enhance your home with our expert carpentry and floor
-                      installation services. Whether it's hardwood, tile, or
-                      custom carpentry work, we ensure quality and precision for
-                      a beautiful, lasting finish.
-                    </p>
-                  </ListItem>
-                  <ListItem
-                    href="/services"
-                    title="Decks + Railings"
-                    className="rounded-md hover:bg-slate-100"
-                  >
-                    <p className="text-black/50">
-                      Extend your living space outdoors with our custom deck
-                      construction. We create durable and stylish decks that
-                      provide the perfect setting for relaxation and
-                      entertainment.
-                    </p>
-                  </ListItem>
+                  {services.map((service) => (
+                    <ListItem
+                      key={service.id}
+                      href={service.url}
+                      title={service.name}
+                      className="rounded-md hover:bg-slate-100"
+                    >
+                      <p className="text-black/50">{service.description}</p>
+                    </ListItem>
+                  ))}
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -168,49 +133,18 @@ const Navbar = () => {
               <NavigationMenuTrigger>Pricing</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
-                  <ListItem
-                    href="/"
-                    title="Kitchen Pricing"
-                    className="rounded-md hover:bg-slate-100"
-                  >
-                    <p className="text-black/50">
-                      Explore our comprehensive guide to kitchen remodeling
-                      costs, including various options to fit your budget and
-                      style.
-                    </p>
-                  </ListItem>
-                  <ListItem
-                    href="/"
-                    title="Bathroom Pricing"
-                    className="rounded-md hover:bg-slate-100"
-                  >
-                    <p className="text-black/50">
-                      Discover detailed pricing information for bathroom
-                      renovations, from basic updates to complete
-                      transformations.
-                    </p>
-                  </ListItem>
-                  <ListItem
-                    href="/"
-                    title="Carpentry Pricing"
-                    className="rounded-md hover:bg-slate-100"
-                  >
-                    <p className="text-black/50">
-                      Find out the costs for our expert carpentry services,
-                      including custom cabinetry, trim work, and more.
-                    </p>
-                  </ListItem>
-                  <ListItem
-                    href="/"
-                    title="Decks + Railings Pricing"
-                    className="rounded-md hover:bg-slate-100"
-                  >
-                    <p className="text-black/50">
-                      Get detailed pricing for deck construction and railing
-                      installations, tailored to enhance your outdoor living
-                      space.
-                    </p>
-                  </ListItem>
+                  {services.map((service) => (
+                    <ListItem
+                      key={service.id}
+                      href={service.pricingUrl}
+                      title={service.pricingName}
+                      className="rounded-md hover:bg-slate-100"
+                    >
+                      <p className="text-black/50">
+                        {service.pricingDescription}
+                      </p>
+                    </ListItem>
+                  ))}
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -259,55 +193,18 @@ const Navbar = () => {
                       <NavigationMenuTrigger>Services</NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <ul className="grid w-[220px] p-4 text-left md:w-[300px] lg:w-[500px] lg:grid-cols-[1fr_1fr] lg:gap-3 lg:p-6">
-                          <ListItem
-                            href="/services"
-                            title="Kitchen Remodeling"
-                            className="rounded-md hover:bg-slate-100"
-                          >
-                            <p className="text-black/50">
-                              Transform your kitchen into a culinary haven with
-                              our expert design and craftsmanship. From modern
-                              upgrades to complete overhauls, we make your dream
-                              kitchen a reality.
-                            </p>
-                          </ListItem>
-                          <ListItem
-                            href="/services"
-                            title="Bathroom Remodeling"
-                            className="rounded-md hover:bg-slate-100"
-                          >
-                            <p className="text-black/50">
-                              Transform your bathroom into a luxurious spa-like
-                              retreat. Our custom remodeling services blend
-                              functionality and elegance, enhancing your daily
-                              routine.
-                            </p>
-                          </ListItem>
-                          <ListItem
-                            href="/services"
-                            title="Carpentry"
-                            className="rounded-md hover:bg-slate-100"
-                          >
-                            <p className="text-black/50">
-                              Enhance your home with our expert carpentry and
-                              floor installation services. Whether it's
-                              hardwood, tile, or custom carpentry work, we
-                              ensure quality and precision for a beautiful,
-                              lasting finish.
-                            </p>
-                          </ListItem>
-                          <ListItem
-                            href="/services"
-                            title="Decks + Railings"
-                            className="rounded-md hover:bg-slate-100"
-                          >
-                            <p className="text-black/50">
-                              Extend your living space outdoors with our custom
-                              deck construction. We create durable and stylish
-                              decks that provide the perfect setting for
-                              relaxation and entertainment.
-                            </p>
-                          </ListItem>
+                          {services.map((service) => (
+                            <ListItem
+                              key={service.id}
+                              href={service.url}
+                              title={service.name}
+                              className="rounded-md hover:bg-slate-100"
+                            >
+                              <p className="text-black/50">
+                                {service.description}
+                              </p>
+                            </ListItem>
+                          ))}
                         </ul>
                       </NavigationMenuContent>
                     </NavigationMenuItem>
@@ -374,50 +271,18 @@ const Navbar = () => {
                       <NavigationMenuTrigger>Pricing</NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <ul className="grid w-[220px] p-4 text-left md:w-[300px] lg:w-[500px] lg:grid-cols-[1fr_1fr] lg:gap-3 lg:p-6">
-                          <ListItem
-                            href="/"
-                            title="Kitchen Pricing"
-                            className="rounded-md hover:bg-slate-100"
-                          >
-                            <p className="text-black/50">
-                              Explore our comprehensive guide to kitchen
-                              remodeling costs, including various options to fit
-                              your budget and style.
-                            </p>
-                          </ListItem>
-                          <ListItem
-                            href="/"
-                            title="Bathroom Pricing"
-                            className="rounded-md hover:bg-slate-100"
-                          >
-                            <p className="text-black/50">
-                              Discover detailed pricing information for bathroom
-                              renovations, from basic updates to complete
-                              transformations.
-                            </p>
-                          </ListItem>
-                          <ListItem
-                            href="/"
-                            title="Carpentry Pricing"
-                            className="rounded-md hover:bg-slate-100"
-                          >
-                            <p className="text-black/50">
-                              Find out the costs for our expert carpentry
-                              services, including custom cabinetry, trim work,
-                              and more.
-                            </p>
-                          </ListItem>
-                          <ListItem
-                            href="/"
-                            title="Decks + Railings Pricing"
-                            className="rounded-md hover:bg-slate-100"
-                          >
-                            <p className="text-black/50">
-                              Get detailed pricing for deck construction and
-                              railing installations, tailored to enhance your
-                              outdoor living space.
-                            </p>
-                          </ListItem>
+                          {services.map((service) => (
+                            <ListItem
+                              key={service.id}
+                              href={service.pricingUrl}
+                              title={service.pricingName}
+                              className="rounded-md hover:bg-slate-100"
+                            >
+                              <p className="text-black/50">
+                                {service.pricingDescription}
+                              </p>
+                            </ListItem>
+                          ))}
                         </ul>
                       </NavigationMenuContent>
                     </NavigationMenuItem>

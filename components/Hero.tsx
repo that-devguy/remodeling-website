@@ -4,6 +4,8 @@ import ConsultationButton from "./ConsultationButton";
 import Link from "next/link";
 import ProjectCarousel from "./ProjectCarousel";
 
+const favoriteFilter = (project) => project.isFavorite;
+
 const Hero = () => {
   return (
     <section className="mx-auto flex flex-col items-center">
@@ -31,7 +33,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex h-full select-none items-center sm:w-1/3">
-          <ProjectCarousel />
+          <ProjectCarousel filterFunction={favoriteFilter} />
         </div>
       </div>
     </section>
