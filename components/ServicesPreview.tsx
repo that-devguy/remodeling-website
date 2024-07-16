@@ -8,11 +8,11 @@ import ServicesPreviewCarousel from "@/components/ServicesPreviewCarousel";
 
 const ServicesPreview = () => {
   return (
-    <section className="flex flex-col items-center bg-white">
+    <section className="flex flex-col items-center bg-white" id="services">
       <div className="flex w-full max-w-[1920px] flex-col items-center gap-8 overflow-hidden p-4 py-10 sm:flex-row sm:px-10 lg:py-24">
         <div className="flex w-full flex-col gap-4 md:gap-2 xl:gap-8">
           <h2 className="title mr-auto text-2xl font-bold uppercase italic text-brand-primary sm:text-2xl lg:text-4xl 2xl:text-5xl">
-            Our Most Popular Services
+            Our Services
           </h2>
 
           <ServicesPreviewCarousel />

@@ -75,14 +75,6 @@ const Footer = () => {
             hello@kittsremodeling.com
           </Link>
         </ul>
-        <div className="mt-6">
-          <p className="text-sm text-white">
-            Disclaimer: All images used on this website are for design concept
-            purposes only. We do not own the rights to these images. If you are
-            the owner of any of these images and wish for them to be removed,
-            please contact us.
-          </p>
-        </div>
       </div>
       <div className="flex flex-col justify-between gap-10 lg:w-1/3">
         <p className="hidden py-4 text-white lg:flex">
@@ -91,6 +83,14 @@ const Footer = () => {
           to complete home additions, our family-owned business brings your
           vision to life.
         </p>
+        <div className="mt-6">
+          <p className="flex text-sm text-white lg:hidden">
+            Disclaimer: All images used on this website are for design concept
+            purposes only. We do not own the rights to these images. If you are
+            the owner of any of these images and wish for them to be removed,
+            please contact us.
+          </p>
+        </div>
         <div>
           <Link href="/" className="">
             <Image
@@ -105,8 +105,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="hidden w-2/3 justify-end gap-16 p-4 lg:flex lg:flex-col pb-0">
-        <div className="hidden justify-end lg:flex xl:gap-32">
+      <div className="hidden w-2/3 justify-between gap-16 p-4 pb-0 lg:flex lg:flex-col">
+        <div className="hidden justify-end lg:flex lg:gap-20 xl:gap-32">
           <ul className="flex flex-col gap-2 text-white">
             <p className="text-lg font-bold">Company</p>
             <Link
