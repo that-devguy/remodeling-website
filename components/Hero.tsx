@@ -4,7 +4,7 @@ import ConsultationButton from "./ConsultationButton";
 import Link from "next/link";
 import ProjectCarousel from "./ProjectCarousel";
 
-const favoriteFilter = (project) => project.isFavorite;
+const favoriteFilter = (project: { isFavorite: any; }) => project.isFavorite;
 
 const Hero = () => {
   return (
