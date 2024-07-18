@@ -36,25 +36,25 @@ const Footer = () => {
         <ul className="flex flex-col gap-2 text-white">
           <p className="text-lg font-bold">Services</p>
           <Link
-            href="/"
+            href="/services/kitchen-remodeling"
             className="px-1 text-sm text-white/50 hover:text-white"
           >
             Kitchen Remodeling
           </Link>
           <Link
-            href="/"
+            href="/services/bathroom-remodeling"
             className="px-1 text-sm text-white/50 hover:text-white"
           >
             Bathroom Remodeling
           </Link>
           <Link
-            href="/"
+            href="/services/home-renovations"
             className="px-1 text-sm text-white/50 hover:text-white"
           >
             Home Renovations
           </Link>
           <Link
-            href="/"
+            href="/services/interior-painting"
             className="px-1 text-sm text-white/50 hover:text-white"
           >
             Interior Painting
@@ -62,12 +62,7 @@ const Footer = () => {
         </ul>
         <ul className="flex flex-col gap-2 text-white">
           <p className="text-lg font-bold">Contact</p>
-          <Link
-            href="/"
-            className="px-1 text-sm text-white/50 hover:text-white"
-          >
-            (800) 555‑0100
-          </Link>
+          <p className="px-1 text-sm text-white">(800) 555‑0100</p>
           <Link
             href="/"
             className="px-1 text-sm text-white/50 hover:text-white"
@@ -137,25 +132,25 @@ const Footer = () => {
           <ul className="flex flex-col gap-2 text-white">
             <p className="text-lg font-bold">Services</p>
             <Link
-              href="/"
+              href="/services/kitchen-remodeling"
               className="px-1 text-sm text-white/50 hover:text-white"
             >
               Kitchen Remodeling
             </Link>
             <Link
-              href="/"
+              href="/services/bathroom-remodeling"
               className="px-1 text-sm text-white/50 hover:text-white"
             >
               Bathroom Remodeling
             </Link>
             <Link
-              href="/"
+              href="/services/home-renovations"
               className="px-1 text-sm text-white/50 hover:text-white"
             >
               Home Renovations
             </Link>
             <Link
-              href="/"
+              href="/services/interior-painting"
               className="px-1 text-sm text-white/50 hover:text-white"
             >
               Interior Painting
@@ -163,12 +158,7 @@ const Footer = () => {
           </ul>
           <ul className="flex flex-col gap-2 text-white">
             <p className="text-lg font-bold">Contact</p>
-            <Link
-              href="/"
-              className="px-1 text-sm text-white/50 hover:text-white"
-            >
-              (800) 555‑0100
-            </Link>
+            <p className="px-1 text-sm text-white">(800) 555‑0100</p>
             <Link
               href="/"
               className="px-1 text-sm text-white/50 hover:text-white"
