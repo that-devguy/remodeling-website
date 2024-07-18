@@ -40,8 +40,8 @@ const Services = () => {
         </Breadcrumb>
       </div>
       <section className="mx-auto flex flex-col items-center bg-white">
-        <div className="flex max-w-[1920px] flex-col items-center justify-center gap-8 overflow-hidden p-4 py-10 sm:flex-row sm:justify-between sm:px-10 lg:pt-24">
-          <div className="flex flex-col gap-8 sm:w-1/2">
+        <div className="flex max-w-[1920px] flex-col items-center justify-center gap-8 overflow-hidden p-4 py-10 md:flex-row sm:justify-between sm:px-10 lg:pt-24">
+          <div className="flex flex-col gap-8 md:w-1/2">
             <h1 className="title mr-auto text-4xl font-bold uppercase italic text-brand-primary sm:text-4xl lg:text-5xl 2xl:text-6xl">
               Bathroom Remodeling
             </h1>
@@ -61,7 +61,7 @@ const Services = () => {
               <ConsultationButton title="Request a Free Consultation" />
             </div>
           </div>
-          <div className="flex h-full select-none items-center sm:w-1/3">
+          <div className="flex h-full select-none items-center md:w-1/3">
             <ProjectCarousel filterFunction={bathroomFilter} />
           </div>
         </div>
