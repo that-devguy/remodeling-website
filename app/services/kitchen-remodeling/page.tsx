@@ -15,7 +15,7 @@ import ProjectCarousel from "@/components/ProjectCarousel";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 
-const kitchenFilter = (project) => project.type.includes("Kitchen");
+const kitchenFilter = (project: { type: string | string[]; }) => project.type.includes("Kitchen");
 
 const Services = () => {
   return (

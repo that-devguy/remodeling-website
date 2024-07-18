@@ -16,10 +16,10 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-const kitchenFilter = (project) => project.type.includes("Kitchen");
-const bathroomFilter = (project) => project.type.includes("Bathroom");
-const homeRenoFilter = (project) => project.type.includes("Home Renovation");
-const paintFilter = (project) => project.type.includes("Paint");
+const kitchenFilter = (project: { type: string | string[]; }) => project.type.includes("Kitchen");
+const bathroomFilter = (project: { type: string | string[]; }) => project.type.includes("Bathroom");
+const homeRenoFilter = (project: { type: string | string[]; }) => project.type.includes("Home Renovation");
+const paintFilter = (project: { type: string | string[]; }) => project.type.includes("Paint");
 
 const Portfolio = () => {
   return (

@@ -29,7 +29,7 @@ import {
 
 const Navbar = () => {
   return (
-    <nav className="max-container padding-container z-30 flex justify-between bg-white px-2 py-6 sm:px-10">
+    <nav className="max-container padding-container z-30 flex justify-between bg-white px-2 py-3 sm:px-10">
       <Link
         href="/"
         className="hidden rounded-sm focus:border-neutral-200 focus:ring-0 focus-visible:outline-none focus-visible:ring-offset-2 sm:flex"

@@ -15,7 +15,8 @@ import ProjectCarousel from "@/components/ProjectCarousel";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 
-const bathroomFilter = (project: { type: string | string[]; }) => project.type.includes("Bathroom");
+const homeRenoFilter = (project: { type: string | string[] }) =>
+  project.type.includes("Home Renovation");
 
 const Services = () => {
   return (
@@ -32,8 +33,8 @@ const Services = () => {
             </BreadcrumbItem>
             <BreadcrumbSeparator></BreadcrumbSeparator>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/services/bathroom-remodeling">
-                Bathroom Remodeling
+              <BreadcrumbLink href="/services/home-renovations">
+                Home Renovations
               </BreadcrumbLink>
             </BreadcrumbItem>
           </BreadcrumbList>
@@ -43,26 +44,29 @@ const Services = () => {
         <div className="flex max-w-[1920px] flex-col items-center justify-center gap-8 overflow-hidden p-4 py-10 sm:flex-row sm:justify-between sm:px-10 lg:pt-24">
           <div className="flex flex-col gap-8 sm:w-1/2">
             <h1 className="title mr-auto text-4xl font-bold uppercase italic text-brand-primary sm:text-4xl lg:text-5xl 2xl:text-6xl">
-              Bathroom Remodeling
+              Home Renovations
             </h1>
             <p className="mr-auto flex">
-              Your bathroom is one of the most frequently used rooms in your
-              home, so you and your family deserve a space that feels both
-              comfortable and luxurious.
+              If you own an older home, it can become less practical with time.
+              The once striking colors and design can fade, resulting in a
+              worn-out look. At Kitts Remodeling, we can help you keep your home
+              in the best condition, protect it, and transform your living
+              spaces to give your family more comfort and style.
             </p>
             <p>
-              Say goodbye to old, fading, and outdated vanities. Replace them
-              with stunning new ones that reflect your personal taste.
-              Reconfigure your lighting scheme to create a calming, soothing
-              atmosphere, and give your tile a brand-new look to tie it all
-              together.
+              Make the most out of your space while achieving the look you’ve
+              always wanted. From redesigning entire rooms to enlarging your
+              kitchen or performing a comprehensive home renovation, we’ll make
+              it happen for you. Safeguard your home with updated windows and
+              doors, protecting your investment so that you and your family can
+              enjoy it for decades to come.
             </p>
             <div className="flex w-fit flex-col gap-4 lg:flex-row lg:items-center lg:gap-8">
               <ConsultationButton title="Request a Free Consultation" />
             </div>
           </div>
           <div className="flex h-full select-none items-center sm:w-1/3">
-            <ProjectCarousel filterFunction={bathroomFilter} />
+            <ProjectCarousel filterFunction={homeRenoFilter} />
           </div>
         </div>
       </section>
@@ -73,14 +77,14 @@ const Services = () => {
         <div className="flex w-full max-w-[1920px] flex-col items-center gap-8 overflow-hidden p-4 py-10 sm:flex-row sm:px-10 lg:py-24">
           <div className="flex w-full flex-col gap-4 md:gap-2 xl:gap-8">
             <h2 className="title mr-auto text-2xl font-bold uppercase italic text-white sm:text-2xl lg:text-4xl 2xl:text-5xl">
-              Your Dream Bathroom In 3 Easy Steps
+              Your Dream Home In 3 Easy Steps
             </h2>
             <div className="mb-6">
               <p className="mr-auto flex text-white">
-                At Kitts Remodeling, we ensure you're always in the loop with
-                every change we make to your bathroom. We provide expert advice
-                on optimizing your space and suggest upgrades that best suit
-                your needs.
+                At Kitts Remodeling, we treat every customer with the utmost
+                dedication and care, no matter the size of the renovation
+                project. We leverage our exceptional skills and expertise to
+                deliver your dream home, often faster than you might expect.
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row md:gap-8">
@@ -92,7 +96,7 @@ const Services = () => {
                 <p className="text-sm text-black/50 lg:text-base">
                   Fill out our form or give us a call. During our phone
                   consultation, we will gather all the details to understand
-                  your vision for your new bathroom.
+                  your vision for your project.
                 </p>
               </div>
               <div className="flex flex-col rounded-md bg-white p-6 sm:w-1/3">
@@ -103,7 +107,7 @@ const Services = () => {
                 <p className="text-sm text-black/50 lg:text-base">
                   Once we have all the details, we’ll provide you with a price
                   estimate and a clear timeline. Then, our expert team will get
-                  to work on transforming your bathroom into the perfect space
+                  to work on transforming your home into the perfect space
                   you’ve envisioned.
                 </p>
               </div>
@@ -112,13 +116,13 @@ const Services = () => {
                   03
                 </h3>
                 <p className="font-medium sm:text-base">
-                  Enjoy Your Dream Bathroom
+                  Enjoy Your Dream Home
                 </p>
                 <p className="text-sm text-black/50 lg:text-base">
-                  Once your bathroom remodel is complete, all that's left for
-                  you to do is enjoy it and make the most of your new upgrades.
-                  Get ready to relax and unwind anytime you want, all within the
-                  comfort of your own home.
+                  Once we’re out the door, get ready to enjoy a home that looks
+                  exactly how you’ve always envisioned. Gather your loved ones
+                  and start creating new memories in a space that’s completely
+                  yours.
                 </p>
               </div>
             </div>
@@ -136,21 +140,21 @@ const Services = () => {
         <div className="flex w-full max-w-[1920px] flex-col items-center gap-8 overflow-hidden p-4 py-10 sm:flex-row sm:px-10 lg:py-24">
           <div className="flex w-full flex-col gap-4 md:gap-2 xl:gap-8">
             <h2 className="title mr-auto text-2xl font-bold uppercase italic text-brand-primary sm:text-2xl lg:text-4xl 2xl:text-5xl">
-              Bathroom Remodeling Prices
+              Home Renovations Prices
             </h2>
             <div className="mb-6">
               <p className="w-full xl:w-1/2">
-                At Kitts Remodeling, we aim to deliver the top-quality
-                craftsmanship you deserve. We work efficiently and methodically
-                to bring your bathroom vision to life, keeping you informed
-                every step of the way.
+                The skill, talent, and attention to detail we provide are
+                unmatched. At Kitts Remodeling, we aim to help you maximize your
+                home's potential and achieve the look you desire, all at a price
+                that fits your budget.
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row md:gap-8">
               <div className="flex select-none flex-col rounded-md border border-slate-200 bg-white text-black shadow-lg sm:w-1/3">
                 <Image
-                  src="/bathroom-1.jpeg"
-                  alt="Basic Bathroom"
+                  src="/home-renovation-1.jpg"
+                  alt="Basic Renovation"
                   height="500"
                   width="600"
                   className="sm:h[225px] h-[215px] rounded-t-md object-cover"
@@ -158,25 +162,24 @@ const Services = () => {
                 <div className="flex flex-col gap-4 p-4">
                   <div className="flex items-center justify-between">
                     <h5 className="font-medium sm:text-base">
-                      Basic Bathroom Remodel*
+                      Basic Home Renovation*
                     </h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
-                    $20k
+                    $150k
                   </p>
                   <p className="mb-8 text-sm text-black/50 lg:text-base">
-                    We offer a range of upgrades to transform your bathroom,
-                    including a fresh paint job, new stock vanities, and updated
-                    light fixtures. We can also replace or refinish your
-                    bathtub, and install new fixtures, flooring, and wall tile
-                    for a completely revitalized space.
+                    Get a fresh start with a complete floor refinish and a full
+                    house repaint. This package includes a basic remodel of your
+                    kitchen and bathroom, replacement of all trims, and a new
+                    lighting configuration to enhance your space.
                   </p>
                 </div>
               </div>
               <div className="flex select-none flex-col rounded-md border border-slate-200 bg-white text-black shadow-lg sm:w-1/3">
                 <Image
-                  src="/bathroom-3.jpg"
-                  alt="Average Bathroom"
+                  src="/home-renovation-2.jpeg"
+                  alt="Average Renovation"
                   height="500"
                   width="600"
                   className="sm:h[225px] h-[215px] rounded-t-md object-cover"
@@ -184,26 +187,24 @@ const Services = () => {
                 <div className="flex flex-col gap-4 p-4">
                   <div className="flex items-center justify-between">
                     <h5 className="font-medium sm:text-base">
-                      Average Bathroom Remodel*
+                      Average Home Renovation*
                     </h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
-                    $55k
+                    $250k
                   </p>
                   <p className="mb-8 text-sm text-black/50 lg:text-base">
-                    Install a new vanity with premium hardware, re-tile your
-                    shower, and add a semi-frameless glass enclosure. We also
-                    offer services to remove popcorn ceilings, update your
-                    flooring, apply a fresh coat of paint, install new lighting,
-                    and upgrade your plumbing fixtures for a complete bathroom
-                    transformation.
+                    Enhance your home with selective wall reconfigurations, a
+                    brand new floor finish, and a complete repaint. This package
+                    includes kitchen and bathroom remodels, new trims, and an
+                    updated lighting configuration for a refreshed look.
                   </p>
                 </div>
               </div>
               <div className="flex select-none flex-col rounded-md border border-slate-200 bg-white text-black shadow-lg sm:w-1/3">
                 <Image
-                  src="/bathroom-4.jpg"
-                  alt="High-End Bathroom"
+                  src="/basement-2.jpg"
+                  alt="High-End Renovation"
                   height="500"
                   width="600"
                   className="sm:h[225px] h-[215px] rounded-t-md object-cover"
@@ -211,35 +212,33 @@ const Services = () => {
                 <div className="flex flex-col gap-4 p-4">
                   <div className="flex items-center justify-between">
                     <h5 className="font-medium sm:text-base">
-                      High-End Bathroom Remodel*
+                      High-End Home Renovation*
                     </h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
-                    $75k +
+                    $400k+
                   </p>
                   <p className="mb-8 text-sm text-black/50 lg:text-base">
-                    Install a custom tile shower with a heavy, frameless glass
-                    enclosure. You also have the option to choose a custom steam
-                    or body-spray shower. Our services include reconfiguring
-                    your lighting scheme with smart controls, as well as
-                    offering premium vanity and tile selections for a luxurious
-                    bathroom experience.
+                    Transform your home with a thorough reconfiguration of walls
+                    where necessary, complete room upgrades, and extensive
+                    kitchen and bathroom remodels. This package also includes
+                    the construction of an addition to expand your living space.
                   </p>
                 </div>
               </div>
             </div>
             <p className="text-sm text-black/50">
-              *Prices are approximate and may vary based on the size of your
-              bathroom and your choice of upgrades and materials. An exact quote
-              for your bathroom remodeling project will be provided after an
-              in-house consultation.
+              *Prices are averages and may vary based on the scope of your home
+              renovation and your selection of upgrades and materials. You will
+              receive a precise quote for your specific home renovation project
+              following the in-house consultation.
             </p>
             <Link
               className="mr-auto flex rounded-sm px-1 text-sm font-medium text-brand-primary underline underline-offset-4 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 md:text-base"
               href="/"
               key="projects"
             >
-              Learn More About Bathroom Remodeling Costs
+              Learn More About Home Renovations Costs
             </Link>
           </div>
         </div>
