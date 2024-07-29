@@ -23,11 +23,11 @@ const PortfolioCarousel = ({ filterFunction }: { filterFunction: (project: Proje
   const [emblaRef, emblaApi] = useEmblaCarousel();
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const featuredProjects = projects.filter(filterFunction);
 
-  const handleMouseEnter = (index) => {
+  const handleMouseEnter = (index: number) => {
     setHoveredIndex(index);
   };
 
