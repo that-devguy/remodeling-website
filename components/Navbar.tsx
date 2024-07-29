@@ -136,11 +136,12 @@ const Navbar = () => {
                   {services.map((service) => (
                     <ListItem
                       key={service.id}
-                      href={service.pricingUrl}
+                      // href={service.pricingUrl}
                       title={service.pricingName}
-                      className="rounded-md hover:bg-slate-100"
+                      className="rounded-md hover:bg-slate-100 text-black/50"
+                      
                     >
-                      <p className="text-black/50">
+                      <p className="text-black/25">
                         {service.pricingDescription}
                       </p>
                     </ListItem>
@@ -274,11 +275,11 @@ const Navbar = () => {
                           {services.map((service) => (
                             <ListItem
                               key={service.id}
-                              href={service.pricingUrl}
+                              // href={service.pricingUrl}
                               title={service.pricingName}
-                              className="rounded-md hover:bg-slate-100"
+                              className="rounded-md hover:bg-slate-100 text-black/50"
                             >
-                              <p className="text-black/50">
+                              <p className="text-black/25">
                                 {service.pricingDescription}
                               </p>
                             </ListItem>
