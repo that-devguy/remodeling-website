@@ -8,7 +8,18 @@ import {
 } from "@/components/ui/emblaCarouselDotButton";
 import projects from "../public/data/projects.json";
 
-const ProjectCarousel = ({ filterFunction }) => {
+type Project = {
+  id: number;
+  name: string;
+  description: string;
+  isFavorite: boolean;
+  useTestimonial: boolean;
+  coverPhoto: string;
+  type: string;
+  testimonial?: string;
+}
+
+const ProjectCarousel = ({ filterFunction }: { filterFunction: (project: Project) => boolean }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel();
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);

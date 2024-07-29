@@ -82,7 +82,7 @@ const Navbar = () => {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
+              <NavigationMenuTrigger>About</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
                   <ListItem
@@ -218,7 +218,7 @@ const Navbar = () => {
                       </a>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                      <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
+                      <NavigationMenuTrigger>About</NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <ul className="grid w-[220px] p-4 text-left md:w-[300px] lg:w-[500px] lg:grid-cols-[1fr_1fr] lg:gap-3 lg:p-6">
                           <ListItem
