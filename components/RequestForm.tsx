@@ -73,7 +73,7 @@ export default function RequestForm() {
             <FormItem>
               <FormLabel>Email Address</FormLabel>
               <FormControl>
-                <Input placeholder="johndoe@example.com" {...field} />
+                <Input placeholder="johndoe@example.com" inputMode="email" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -86,7 +86,7 @@ export default function RequestForm() {
             <FormItem>
               <FormLabel>Phone Number</FormLabel>
               <FormControl>
-                <Input placeholder="(123) 456-7890" {...field} />
+                <Input placeholder="(123) 456-7890" inputMode="tel" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
