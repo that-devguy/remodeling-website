@@ -14,14 +14,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import RequestSchema from "@/schema/index";
 import { Label } from "@/components/ui/label";
@@ -51,7 +43,7 @@ export default function RequestForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2 text-[16px]"
+        className="grid grid-cols-1 gap-x-8 gap-y-4 text-[16px] sm:grid-cols-2"
       >
         <FormField
           control={form.control}
@@ -60,7 +52,7 @@ export default function RequestForm() {
             <FormItem>
               <FormLabel>Full Name</FormLabel>
               <FormControl>
-                <Input placeholder="John Doe" {...field} />
+                <Input placeholder="John Doe" autoFocus={false} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -73,7 +65,11 @@ export default function RequestForm() {
             <FormItem>
               <FormLabel>Email Address</FormLabel>
               <FormControl>
-                <Input placeholder="johndoe@example.com" inputMode="email" {...field} />
+                <Input
+                  placeholder="johndoe@example.com"
+                  inputMode="email"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -86,7 +82,11 @@ export default function RequestForm() {
             <FormItem>
               <FormLabel>Phone Number</FormLabel>
               <FormControl>
-                <Input placeholder="(123) 456-7890" inputMode="tel" {...field} />
+                <Input
+                  placeholder="(123) 456-7890"
+                  inputMode="tel"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -164,112 +164,7 @@ export default function RequestForm() {
             </FormItem>
           )}
         />
-        {/* <FormField
-          control={form.control}
-          name="typeOfProject"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Type of Project</FormLabel>
-              <Select onValueChange={field.onChange} defaultValue={field.value}>
-                <FormControl>
-                  <SelectTrigger className="w-full">
-                    <SelectValue placeholder="Select a project type" />
-                  </SelectTrigger>
-                </FormControl>
-                <SelectContent>
-                  <SelectItem value="Kitchen Remodel">
-                    Kitchen Remodel
-                  </SelectItem>
-                  <SelectItem value="Bathroom Renovation">
-                    Bathroom Renovation
-                  </SelectItem>
-                  <SelectItem value="Floor Installation">
-                    Floor Installation
-                  </SelectItem>
-                  <SelectItem value="Deck Construction">
-                    Deck Construction
-                  </SelectItem>
-                  <SelectItem value="Other">Other</SelectItem>
-                </SelectContent>
-              </Select>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="budgetRange"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Estimated Budget Range</FormLabel>
-              <Select onValueChange={field.onChange} defaultValue={field.value}>
-                <FormControl>
-                  <SelectTrigger className="w-full">
-                    <SelectValue placeholder="Select your budget range" />
-                  </SelectTrigger>
-                </FormControl>
-                <SelectContent>
-                  <SelectItem value="Below $10,000">Below $10,000</SelectItem>
-                  <SelectItem value="$10,000 - $20,000">
-                    $10,000 - $20,000
-                  </SelectItem>
-                  <SelectItem value="$20,000 - $50,000">
-                    $20,000 - $50,000
-                  </SelectItem>
-                  <SelectItem value="Above $50,000">Above $50,000</SelectItem>
-                </SelectContent>
-              </Select>
-
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="projectDescription"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Brief Description of Your Project</FormLabel>
-              <FormControl>
-                <Textarea
-                  placeholder="Describe your project in a few sentences"
-                  {...field}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        <FormField
-          control={form.control}
-          name="howDidYouHearAboutUs"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>How Did You Hear About Us?</FormLabel>
-
-              <Select onValueChange={field.onChange} defaultValue={field.value}>
-                <FormControl>
-                  <SelectTrigger className="w-full">
-                    <SelectValue placeholder="Select an option" />
-                  </SelectTrigger>
-                </FormControl>
-                <SelectContent>
-                  <SelectItem value="Internet Search">
-                    Internet Search
-                  </SelectItem>
-                  <SelectItem value="Social Media">Social Media</SelectItem>
-                  <SelectItem value="Referral">Referral</SelectItem>
-                  <SelectItem value="Advertisement">Advertisement</SelectItem>
-                  <SelectItem value="Other">Other</SelectItem>
-                </SelectContent>
-              </Select>
-
-              <FormMessage />
-            </FormItem>
-          )}
-        /> */}
-        <div className="col-span-1 md:col-span-2 mt-4">
+        <div className="col-span-1 mt-4 md:col-span-2">
           <Button type="submit">Submit</Button>
         </div>
       </form>
