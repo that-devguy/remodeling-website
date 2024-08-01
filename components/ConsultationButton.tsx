@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import {
   Dialog,
@@ -21,7 +22,7 @@ const Button = ({ title }: ButtonProps) => {
           {title}
         </div>
       </DialogTrigger>
-      <DialogContent>
+      <DialogContent onOpenAutoFocus={(event) => event.preventDefault()}>
         <DialogHeader>
           <DialogTitle className="font-medium">
             Request a Free Consultation
