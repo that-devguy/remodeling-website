@@ -6,6 +6,7 @@ import ProjectCard from "@/app/portfolio/components/ProjectCard";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 import projects from "@/public/data/projects.json";
+import kitchenImages from "@/public/data/kitchens.json";
 import PortfolioCarousel from "@/components/PortfolioCarousel";
 import {
   Breadcrumb,
@@ -15,11 +16,23 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
-const kitchenFilter = (project: { type: string | string[]; }) => project.type.includes("Kitchen");
-const bathroomFilter = (project: { type: string | string[]; }) => project.type.includes("Bathroom");
-const homeRenoFilter = (project: { type: string | string[]; }) => project.type.includes("Home Renovation");
-const paintFilter = (project: { type: string | string[]; }) => project.type.includes("Paint");
+const kitchenFilter = (project: { type: string | string[] }) =>
+  project.type.includes("Kitchen");
+const bathroomFilter = (project: { type: string | string[] }) =>
+  project.type.includes("Bathroom");
+const homeRenoFilter = (project: { type: string | string[] }) =>
+  project.type.includes("Home Renovation");
+const paintFilter = (project: { type: string | string[] }) =>
+  project.type.includes("Paint");
 
 const Portfolio = () => {
   return (
@@ -55,8 +68,18 @@ const Portfolio = () => {
             <h3 className="title mr-auto text-2xl font-bold uppercase italic text-brand-primary sm:text-2xl lg:text-3xl 2xl:text-3xl">
               Kitchen Remodels
             </h3>
-            <div className="mr-auto flex h-full select-none items-center">
-              <PortfolioCarousel filterFunction={kitchenFilter} />
+            <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+              {kitchenImages.map((image, index) => (
+                <div>
+                  <Image
+                    src={`/kitchens/${image}`}
+                    alt={`Kitchen Image ${index}`}
+                    height={430}
+                    width={500}
+                    className="h-[215px] rounded-md object-cover sm:h-[250px]"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -17,23 +17,18 @@ type Project = {
   coverPhoto: string;
   type: string;
   testimonial?: string;
-}
+};
 
-const ProjectCarousel = ({ filterFunction }: { filterFunction: (project: Project) => boolean }) => {
+const ProjectCarousel = ({
+  filterFunction,
+}: {
+  filterFunction: (project: Project) => boolean;
+}) => {
   const [emblaRef, emblaApi] = useEmblaCarousel();
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const featuredProjects = projects.filter(filterFunction);
-
-  const handleMouseEnter = (index: number) => {
-    setHoveredIndex(index);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredIndex(null);
-  };
 
   return (
     <div className="embla relative mt-4">
@@ -41,11 +36,7 @@ const ProjectCarousel = ({ filterFunction }: { filterFunction: (project: Project
         <div className="embla__container">
           {featuredProjects.map((project, index) => (
             <div className="embla__slide" key={project.id}>
-              <div
-                className="relative"
-                onMouseEnter={() => handleMouseEnter(index)}
-                onMouseLeave={handleMouseLeave}
-              >
+              <div className="relative">
                 <Image
                   src={project.coverPhoto}
                   alt={project.name}
@@ -53,13 +44,6 @@ const ProjectCarousel = ({ filterFunction }: { filterFunction: (project: Project
                   width={500}
                   className="h-[215px] rounded-md object-cover sm:h-[330px] 2xl:h-[430px]"
                 />
-                {hoveredIndex === index && (
-                  <Link href="/">
-                    <div className="absolute inset-0 flex items-center justify-center rounded-md bg-brand-primary/75 font-medium text-white underline underline-offset-4">
-                      View Project
-                    </div>
-                  </Link>
-                )}
               </div>
 
               <div className="py-4 sm:p-4">

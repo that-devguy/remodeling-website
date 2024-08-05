@@ -29,7 +29,7 @@ const WhyUsTable = () => {
           <TableHead></TableHead>
           <TableHead className="w-1/4">
             <Image
-              src="/kitts-blue-logo.png"
+              src="/kitts-logo-blue.png"
               alt="logo"
               height={175}
               width={175}
