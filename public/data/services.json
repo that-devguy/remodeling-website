@@ -6,7 +6,7 @@
     "pricingName": "Kitchen Pricing",
     "description": "Transform your kitchen into a culinary haven with our expert design and craftsmanship. From modern upgrades to complete overhauls, we make your dream kitchen a reality.",
     "pricingDescription": "Indepth pricing guides are on the way!",
-    "coverPhoto": "/bills-home-renovation/picture-3.jpg",
+    "coverPhoto": "/kitchens/image1.jpg",
     "url": "/services/kitchen-remodeling",
     "pricingUrl": "/"
   },
@@ -19,17 +19,6 @@
     "pricingDescription": "Indepth pricing guides are on the way!",
     "coverPhoto": "/bathroom-1.jpeg",
     "url": "/services/bathroom-remodeling",
-    "pricingUrl": "/"
-  },
-  {
-    "id": "3",
-    "isFavorite": true,
-    "name": "Home Renovations",
-    "pricingName": "Full Home Pricing",
-    "description": "Revitalize your entire home with our comprehensive home renovation services. We manage every aspect of your project, delivering a cohesive and beautiful transformation.",
-    "pricingDescription": "Indepth pricing guides are on the way!",
-    "coverPhoto": "/home-renovation-1.jpg",
-    "url": "/services/home-renovations",
     "pricingUrl": "/"
   },
   {

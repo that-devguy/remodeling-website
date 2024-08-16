@@ -59,10 +59,9 @@ const Portfolio = () => {
             Discover the transformative power of quality craftsmanship with
             Kitts Remodeling. Explore our extensive gallery showcasing a wide
             range of completed projects, from stunning kitchen remodels and
-            luxurious bathroom renovations to elegant custom carpentry and
-            expansive deck constructions. See firsthand how we bring our
-            clients' visions to life with meticulous attention to detail and a
-            commitment to excellence.
+            luxurious bathroom renovations to elegant custom carpentry. See
+            firsthand how we bring our clients' visions to life with meticulous
+            attention to detail and a commitment to excellence.
           </p>
           <div className="mr-auto flex flex-col pt-10 lg:pt-24">
             <h3 className="title mr-auto text-2xl font-bold uppercase italic text-brand-primary sm:text-2xl lg:text-3xl 2xl:text-3xl">

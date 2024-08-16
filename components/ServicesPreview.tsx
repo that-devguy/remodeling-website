@@ -18,7 +18,7 @@ const ServicesPreview = () => {
           <ServicesPreviewCarousel />
 
           <div className="mb-6 hidden sm:my-6 sm:flex">
-            <ul className="grid grid-cols-2 justify-between gap-4 sm:gap-8 md:grid-cols-4 xl:gap-12">
+            <ul className="grid grid-cols-2 justify-between gap-4 sm:gap-8 md:grid-cols-3 xl:gap-12">
               {services.map((service) => (
                 <li key={service.id}>
                   <Image

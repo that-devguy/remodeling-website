@@ -47,7 +47,7 @@ nav :focus {
 .carousel-slider-wrapper {
   scrollbar-width: thin;
   /* For Firefox */
-  scrollbar-color: #116ed1 #f1f1f1;
+  scrollbar-color: #ac0000 #f1f1f1;
   /* For Firefox */
 }
 
@@ -57,7 +57,7 @@ nav :focus {
 }
 
 .carousel-slider-wrapper::-webkit-scrollbar-thumb {
-  background: #116ed1;
+  background: #ac0000;
   /* Color of the scrollbar */
   border-radius: 10px;
 }

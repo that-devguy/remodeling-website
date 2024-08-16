@@ -18,7 +18,7 @@ const Hero = () => {
           <p className="sm:my-6">
             With over 25 years of experience, we deliver expert craftsmanship
             with an honest work ethic. From kitchen makeovers and bathroom
-            renovations to complete home additions, our family-owned business
+            renovations to custom built-ins, our family-owned business
             brings your vision to life.
           </p>
           <div className="flex w-fit flex-col gap-4 lg:flex-row lg:items-center lg:gap-8">

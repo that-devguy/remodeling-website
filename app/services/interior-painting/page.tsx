@@ -161,7 +161,7 @@ const Services = () => {
                     <h5 className="font-medium sm:text-base">Small Home*</h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
-                    $10k
+                    $8k
                   </p>
                   <p className="mb-8 text-sm text-black/50 lg:text-base">
                     Approximately 1,200 to 1,800 square feet. Includes interior
@@ -183,7 +183,7 @@ const Services = () => {
                     <h5 className="font-medium sm:text-base">Medium Home*</h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
-                    $18k
+                    $15k
                   </p>
                   <p className="mb-8 text-sm text-black/50 lg:text-base">
                     Approximately 1,800 to 3,000 square feet. Includes interior
@@ -205,7 +205,7 @@ const Services = () => {
                     <h5 className="font-medium sm:text-base">Large Home*</h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
-                    $40k+
+                    $30k+
                   </p>
                   <p className="mb-8 text-sm text-black/50 lg:text-base">
                     Large home with over 3,000 square feet. Includes extensive

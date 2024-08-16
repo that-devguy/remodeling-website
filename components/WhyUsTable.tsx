@@ -29,14 +29,14 @@ const WhyUsTable = () => {
           <TableHead></TableHead>
           <TableHead className="w-1/4">
             <Image
-              src="/kitts-logo-blue.png"
+              src="/KittsRemodelingLogoBlue.png"
               alt="logo"
               height={175}
-              width={175}
+              width={120}
               className="mx-auto hidden pb-3 md:flex"
             ></Image>
             <Image
-              src="/kitts-small-blue-logo.png"
+              src="/KittsRemodelingLogoBlue.png"
               alt="logo"
               height={75}
               width={75}

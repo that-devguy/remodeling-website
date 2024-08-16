@@ -29,16 +29,16 @@ import {
 
 const Navbar = () => {
   return (
-    <nav className="max-container padding-container z-30 flex justify-between bg-white px-2 py-3 sm:px-10">
+    <nav className="max-container padding-container z-30 flex justify-between bg-white px-2 py-5 sm:px-10">
       <Link
         href="/"
         className="hidden rounded-sm focus:border-neutral-200 focus:ring-0 focus-visible:outline-none focus-visible:ring-offset-2 sm:flex"
       >
         <Image
-          src="/kitts-logo-blue.png"
+          src="/KittsRemodelingLogoBlue.png"
           alt="logo"
           height={50}
-          width={200}
+          width={125}
         ></Image>
       </Link>
       <Link
@@ -46,10 +46,10 @@ const Navbar = () => {
         className="flex rounded-sm focus:border-neutral-200 focus:ring-0 focus-visible:outline-none focus-visible:ring-offset-2 sm:hidden"
       >
         <Image
-          src="/kitts-small-blue-logo.png"
+          src="/KittsRemodelingLogoBlue.png"
           alt="logo"
           height={50}
-          width={50}
+          width={75}
           className="ml-2"
         ></Image>
       </Link>
@@ -138,8 +138,7 @@ const Navbar = () => {
                       key={service.id}
                       // href={service.pricingUrl}
                       title={service.pricingName}
-                      className="rounded-md hover:bg-slate-100 text-black/50"
-                      
+                      className="rounded-md text-black/50 hover:bg-slate-100"
                     >
                       <p className="text-black/25">
                         {service.pricingDescription}
@@ -151,7 +150,7 @@ const Navbar = () => {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <p className="flex items-center text-sm font-medium">(800) 555‑0100</p>
+        <p className="flex items-center text-sm font-medium">(216) 417-9100</p>
         <ConsultationButton title="Get A Quote" />
       </div>
 
@@ -172,17 +171,17 @@ const Navbar = () => {
                   className="ml-3 flex w-[160px] rounded-sm focus:border-neutral-200 focus:ring-0 focus-visible:outline-none focus-visible:ring-offset-2 sm:w-[200px]"
                 >
                   <Image
-                    src="/kitts-logo-blue.png"
+                    src="/KittsRemodelingLogoBlue.png"
                     alt="logo"
                     height={50}
-                    width={160}
+                    width={75}
                     className="flex pt-1 sm:hidden"
                   ></Image>
                   <Image
-                    src="/kitts-logo-blue.png"
+                    src="/KittsRemodelingLogoBlue.png"
                     alt="logo"
                     height={50}
-                    width={200}
+                    width={125}
                     className="hidden sm:flex"
                   ></Image>
                 </a>
@@ -277,7 +276,7 @@ const Navbar = () => {
                               key={service.id}
                               // href={service.pricingUrl}
                               title={service.pricingName}
-                              className="rounded-md hover:bg-slate-100 text-black/50"
+                              className="rounded-md text-black/50 hover:bg-slate-100"
                             >
                               <p className="text-black/25">
                                 {service.pricingDescription}

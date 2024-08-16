@@ -62,12 +62,12 @@ const Footer = () => {
         </ul>
         <ul className="flex flex-col gap-2 text-white">
           <p className="text-lg font-bold">Contact</p>
-          <p className="px-1 text-sm text-white">(800) 555‑0100</p>
+          <p className="px-1 text-sm text-white">(216) 417-9100</p>
           <Link
             href="/"
             className="px-1 text-sm text-white/50 hover:text-white"
           >
-            hello@kittsremodeling.com
+            kittsremodeling@gmail.com
           </Link>
         </ul>
       </div>
@@ -75,8 +75,8 @@ const Footer = () => {
         <p className="hidden py-4 text-white lg:flex">
           With over 25 years of experience, we deliver expert craftsmanship with
           an honest work ethic. From kitchen makeovers and bathroom renovations
-          to complete home additions, our family-owned business brings your
-          vision to life.
+          to custom built-ins, our family-owned business brings your vision to
+          life.
         </p>
         <div className="mt-6">
           <p className="flex text-sm text-white lg:hidden">
@@ -89,13 +89,13 @@ const Footer = () => {
         <div>
           <Link href="/" className="">
             <Image
-              src="/kitts-logo-white.png"
+              src="/KittsRemodelingLogoWhite.png"
               alt="logo"
               height={67.03}
-              width={300}
+              width={200}
             ></Image>
           </Link>
-          <p className="text-sm text-white">
+          <p className="pt-4 text-sm text-white">
             Copyright &#169; 2001 - 2024 Kitts Remodeling. All rights reserved.
           </p>
         </div>
@@ -158,12 +158,12 @@ const Footer = () => {
           </ul>
           <ul className="flex flex-col gap-2 text-white">
             <p className="text-lg font-bold">Contact</p>
-            <p className="px-1 text-sm text-white">(800) 555‑0100</p>
+            <p className="px-1 text-sm text-white">(216) 417-9100</p>
             <Link
               href="/"
               className="px-1 text-sm text-white/50 hover:text-white"
             >
-              hello@kittsremodeling.com
+              kittsremodeling@gmail.com
             </Link>
           </ul>
         </div>

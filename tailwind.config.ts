@@ -20,6 +20,7 @@ const config = {
     extend: {
       colors: {
         "brand-primary": "#116ed1",
+        "brand-secondary": "#ac0000"
       },
       minHeight: {
         "screen-minus-nav": "calc(100vh - 110px)",
