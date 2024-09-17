@@ -123,13 +123,13 @@ const Services = () => {
                 </p>
               </div>
             </div>
-            <Link
+            {/* <Link
               className="mr-auto flex rounded-sm px-1 text-sm font-medium text-white underline underline-offset-4 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 md:text-base"
               href="/"
               key="projects"
             >
               View Our Complete Process
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
@@ -235,13 +235,13 @@ const Services = () => {
               for your bathroom remodeling project will be provided after an
               in-house consultation.
             </p>
-            <Link
+            {/* <Link
               className="mr-auto flex rounded-sm px-1 text-sm font-medium text-brand-primary underline underline-offset-4 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 md:text-base"
               href="/"
               key="projects"
             >
               Learn More About Bathroom Remodeling Costs
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
