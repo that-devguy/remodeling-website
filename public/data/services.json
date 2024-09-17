@@ -17,7 +17,7 @@
     "pricingName": "Bathroom Pricing",
     "description": "Transform your bathroom into a luxurious spa-like retreat. Our custom remodeling services blend functionality and elegance, enhancing your daily routine.",
     "pricingDescription": "Indepth pricing guides are on the way!",
-    "coverPhoto": "/bathroom-1.jpeg",
+    "coverPhoto": "/bathrooms/image7.jpg",
     "url": "/services/bathroom-remodeling",
     "pricingUrl": "/"
   },
@@ -28,7 +28,7 @@
     "pricingName": "Paint Pricing",
     "description": "Brighten and refresh your home with our professional interior painting services. We ensure a flawless finish that enhances the beauty of your living spaces.",
     "pricingDescription": "Indepth pricing guides are on the way!",
-    "coverPhoto": "/interior-painting-1.jpg",
+    "coverPhoto": "/painting/image1.jpg",
     "url": "/services/interior-painting",
     "pricingUrl": "/"
   }

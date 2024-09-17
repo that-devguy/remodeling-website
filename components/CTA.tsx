@@ -23,8 +23,8 @@ const CTA = () => {
         <div className="relative hidden h-full items-start sm:w-1/2 md:flex md:items-center">
           <div className="relative flex h-full">
             <Image
-              src="/kitchen-2.jpeg"
-              alt="kitchen-2"
+              src="/kitchens/image1-during.jpg"
+              alt="Gutted Kitchen Remodel"
               width="640"
               height="400"
               className="w-fill rounded-md object-cover sm:h-[330px] 2xl:h-[430px]"

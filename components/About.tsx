@@ -9,8 +9,8 @@ const About = () => {
         <div className="relative h-full items-start sm:w-1/2 md:items-center">
           <div className="relative flex h-full">
             <Image
-              src="/kitchen-1.jpeg"
-              alt="kitchen-1"
+              src="/kitchens/image6.jpg"
+              alt="Kitchen Remodel"
               width="640"
               height="400"
               className="w-full rounded-md object-cover sm:h-[330px] 2xl:h-[430px]"

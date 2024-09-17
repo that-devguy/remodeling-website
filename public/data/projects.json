@@ -14,8 +14,8 @@
     "name": "Joe",
     "description": "kitchen renovation",
     "isFavorite": true,
-    "useTestimonial": true,
-    "coverPhoto": "/kitchen-2.jpeg",
+    "useTestimonial": false,
+    "coverPhoto": "/kitchens/image6.jpg",
     "type": "Kitchen",
     "testimonial": "Kitts Remodeling transformed our kitchen into an incredible space. Their attention to detail and commitment to excellence is unmatched. We love spending time cooking in our new kitchen and have received so many compliments from friends and family."
   },
@@ -24,8 +24,8 @@
     "name": "Anna",
     "description": "kitchen renovation",
     "isFavorite": true,
-    "useTestimonial": true,
-    "coverPhoto": "/kitchen-3.jpg",
+    "useTestimonial": false,
+    "coverPhoto": "/kitchens/image8.jpg",
     "type": "Kitchen",
     "testimonial": "Our new kitchen is everything we dreamed of! Kitts Remodeling brought our vision to life with outstanding craftsmanship."
   },
@@ -34,7 +34,7 @@
     "name": "Michael",
     "description": "kitchen renovation",
     "isFavorite": false,
-    "useTestimonial": true,
+    "useTestimonial": false,
     "coverPhoto": "/kitchen-4.jpg",
     "type": "Kitchen",
     "testimonial": "The team was professional and the end result was fantastic. Highly recommend Kitts Remodeling!"
