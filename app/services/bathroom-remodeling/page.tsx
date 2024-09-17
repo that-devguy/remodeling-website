@@ -15,7 +15,8 @@ import ProjectCarousel from "@/components/ProjectCarousel";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 
-const bathroomFilter = (project: { type: string | string[]; }) => project.type.includes("Bathroom");
+const bathroomFilter = (project: { type: string | string[] }) =>
+  project.type.includes("Bathroom");
 
 const Services = () => {
   return (
@@ -40,7 +41,7 @@ const Services = () => {
         </Breadcrumb>
       </div>
       <section className="mx-auto flex flex-col items-center bg-white">
-        <div className="flex max-w-[1920px] flex-col items-center justify-center gap-8 overflow-hidden p-4 py-10 md:flex-row sm:justify-between sm:px-10 lg:pt-24">
+        <div className="flex max-w-[1920px] flex-col items-center justify-center gap-8 overflow-hidden p-4 py-10 sm:justify-between sm:px-10 md:flex-row lg:pt-24">
           <div className="flex flex-col gap-8 md:w-1/2">
             <h1 className="title mr-auto text-4xl font-bold uppercase italic text-brand-primary sm:text-4xl lg:text-5xl 2xl:text-6xl">
               Bathroom Remodeling
@@ -148,14 +149,14 @@ const Services = () => {
             </div>
             <div className="flex flex-col gap-4 sm:flex-row md:gap-8">
               <div className="flex select-none flex-col rounded-md border border-slate-200 bg-white text-black shadow-lg sm:w-1/3">
-                <Image
+                {/* <Image
                   src="/bathroom-1.jpeg"
                   alt="Basic Bathroom"
                   height="500"
                   width="600"
                   className="sm:h[225px] h-[215px] rounded-t-md object-cover"
-                />
-                <div className="flex flex-col gap-4 p-4">
+                /> */}
+                <div className="flex flex-col gap-4 p-6">
                   <div className="flex items-center justify-between">
                     <h5 className="font-medium sm:text-base">
                       Basic Bathroom Remodel*
@@ -164,7 +165,7 @@ const Services = () => {
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
                     $20k
                   </p>
-                  <p className="mb-8 text-sm text-black/50 lg:text-base">
+                  <p className="text-sm text-black/50 lg:text-base">
                     We offer a range of upgrades to transform your bathroom,
                     including a fresh paint job, new stock vanities, and updated
                     light fixtures. We can also replace or refinish your
@@ -174,14 +175,14 @@ const Services = () => {
                 </div>
               </div>
               <div className="flex select-none flex-col rounded-md border border-slate-200 bg-white text-black shadow-lg sm:w-1/3">
-                <Image
+                {/* <Image
                   src="/bathroom-3.jpg"
                   alt="Average Bathroom"
                   height="500"
                   width="600"
                   className="sm:h[225px] h-[215px] rounded-t-md object-cover"
-                />
-                <div className="flex flex-col gap-4 p-4">
+                /> */}
+                <div className="flex flex-col gap-4 p-6">
                   <div className="flex items-center justify-between">
                     <h5 className="font-medium sm:text-base">
                       Average Bathroom Remodel*
@@ -190,7 +191,7 @@ const Services = () => {
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
                     $55k
                   </p>
-                  <p className="mb-8 text-sm text-black/50 lg:text-base">
+                  <p className="text-sm text-black/50 lg:text-base">
                     Install a new vanity with premium hardware, re-tile your
                     shower, and add a semi-frameless glass enclosure. We also
                     offer services to remove popcorn ceilings, update your
@@ -201,14 +202,14 @@ const Services = () => {
                 </div>
               </div>
               <div className="flex select-none flex-col rounded-md border border-slate-200 bg-white text-black shadow-lg sm:w-1/3">
-                <Image
+                {/* <Image
                   src="/bathroom-4.jpg"
                   alt="High-End Bathroom"
                   height="500"
                   width="600"
                   className="sm:h[225px] h-[215px] rounded-t-md object-cover"
-                />
-                <div className="flex flex-col gap-4 p-4">
+                /> */}
+                <div className="flex flex-col gap-4 p-6">
                   <div className="flex items-center justify-between">
                     <h5 className="font-medium sm:text-base">
                       High-End Bathroom Remodel*

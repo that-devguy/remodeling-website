@@ -30,32 +30,22 @@
     "testimonial": "Our new kitchen is everything we dreamed of! Kitts Remodeling brought our vision to life with outstanding craftsmanship."
   },
   {
-    "id": 4,
-    "name": "Michael",
-    "description": "kitchen renovation",
-    "isFavorite": false,
-    "useTestimonial": false,
-    "coverPhoto": "/kitchen-4.jpg",
-    "type": "Kitchen",
-    "testimonial": "The team was professional and the end result was fantastic. Highly recommend Kitts Remodeling!"
-  },
-  {
     "id": 5,
     "name": "Jane",
-    "description": "shower renovation",
+    "description": "bathroom renovation",
     "isFavorite": false,
     "useTestimonial": false,
-    "coverPhoto": "/bathroom-1.jpeg",
+    "coverPhoto": "/bathrooms/image5.jpg",
     "type": "Bathroom",
     "testimonial": ""
   },
   {
     "id": 6,
-    "name": "Emily",
-    "description": "guest bathroom upgrade",
+    "name": "John",
+    "description": "shower upgrade",
     "isFavorite": false,
     "useTestimonial": false,
-    "coverPhoto": "/bathroom-2.jpg",
+    "coverPhoto": "/bathrooms/image7.jpg",
     "type": "Bathroom",
     "testimonial": ""
   },
@@ -65,29 +55,19 @@
     "description": "bathroom renovation",
     "isFavorite": false,
     "useTestimonial": false,
-    "coverPhoto": "/bathroom-3.jpg",
-    "type": "Bathroom",
-    "testimonial": ""
-  },
-  {
-    "id": 8,
-    "name": "Sarah",
-    "description": "luxury bathroom upgrade",
-    "isFavorite": false,
-    "useTestimonial": false,
-    "coverPhoto": "/bathroom-4.jpg",
+    "coverPhoto": "/bathrooms/image1.jpg",
     "type": "Bathroom",
     "testimonial": ""
   },
   {
     "id": 9,
-    "name": "Alice",
-    "description": "entire home renovation",
+    "name": "Laura",
+    "description": "custom utility sink addition",
     "isFavorite": false,
-    "useTestimonial": false,
-    "coverPhoto": "/home-renovation-1.jpg",
+    "useTestimonial": true,
+    "coverPhoto": "/home-renovations/image2.jpg",
     "type": "Home Renovation",
-    "testimonial": ""
+    "testimonial": "I used Kitts Remodeling to add a utility sink in my garage. I have hot and cold water with a back splash... excellent work! Definitely recommend!"
   },
   {
     "id": 10,
@@ -121,41 +101,21 @@
   },
   {
     "id": 13,
-    "name": "George",
-    "description": "interior painting",
+    "name": "Laura",
+    "description": "interior paint",
     "isFavorite": false,
     "useTestimonial": false,
-    "coverPhoto": "/interior-painting-1.jpg",
+    "coverPhoto": "/painting/image1.jpg",
     "type": "Paint",
     "testimonial": ""
   },
   {
     "id": 14,
-    "name": "Sophia",
-    "description": "interior painting",
+    "name": "Jane",
+    "description": "interior paint",
     "isFavorite": false,
     "useTestimonial": false,
-    "coverPhoto": "/interior-painting-2.jpg",
-    "type": "Paint",
-    "testimonial": ""
-  },
-  {
-    "id": 15,
-    "name": "Kevin",
-    "description": "interior painting",
-    "isFavorite": false,
-    "useTestimonial": false,
-    "coverPhoto": "/interior-painting-3.jpg",
-    "type": "Paint",
-    "testimonial": ""
-  },
-  {
-    "id": 16,
-    "name": "Rachel",
-    "description": "interior painting",
-    "isFavorite": false,
-    "useTestimonial": false,
-    "coverPhoto": "/interior-painting-4.png",
+    "coverPhoto": "/bathrooms/image6.jpg",
     "type": "Paint",
     "testimonial": ""
   }

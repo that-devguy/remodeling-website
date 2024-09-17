@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="max-container padding-container z-30 flex flex-col justify-between bg-brand-primary px-4 py-5 pb-20 pt-10 sm:px-10 lg:flex-row">
       <div className="mb-6 flex flex-col justify-start gap-2 py-4 md:flex-row md:gap-32 lg:hidden">
         <ul className="flex flex-col gap-2 text-white">
-          <p className="text-lg font-bold">Company</p>
+          {/* <p className="text-lg font-bold">Company</p>
           <Link
             href="/"
             className="px-1 text-sm text-white/50 hover:text-white"
@@ -31,7 +31,7 @@ const Footer = () => {
             className="px-1 text-sm text-white/50 hover:text-white"
           >
             Careers
-          </Link>
+          </Link> */}
         </ul>
         <ul className="flex flex-col gap-2 text-white">
           <p className="text-lg font-bold">Services</p>
@@ -103,7 +103,7 @@ const Footer = () => {
       <div className="hidden w-2/3 justify-between gap-16 p-4 pb-0 lg:flex lg:flex-col">
         <div className="hidden justify-end lg:flex lg:gap-20 xl:gap-32">
           <ul className="flex flex-col gap-2 text-white">
-            <p className="text-lg font-bold">Company</p>
+            {/* <p className="text-lg font-bold">Company</p>
             <Link
               href="/"
               className="px-1 text-sm text-white/50 hover:text-white"
@@ -127,7 +127,7 @@ const Footer = () => {
               className="px-1 text-sm text-white/50 hover:text-white"
             >
               Careers
-            </Link>
+            </Link> */}
           </ul>
           <ul className="flex flex-col gap-2 text-white">
             <p className="text-lg font-bold">Services</p>

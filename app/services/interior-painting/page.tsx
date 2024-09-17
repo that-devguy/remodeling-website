@@ -149,21 +149,21 @@ const Services = () => {
             </div>
             <div className="flex flex-col gap-4 sm:flex-row md:gap-8">
               <div className="flex select-none flex-col rounded-md border border-slate-200 bg-white text-black shadow-lg sm:w-1/3">
-                <Image
+                {/* <Image
                   src="/interior-painting-2.jpg"
                   alt="Small Paint"
                   height="500"
                   width="600"
                   className="sm:h[225px] h-[215px] rounded-t-md object-cover"
-                />
-                <div className="flex flex-col gap-4 p-4">
+                /> */}
+                <div className="flex flex-col gap-4 p-6">
                   <div className="flex items-center justify-between">
                     <h5 className="font-medium sm:text-base">Small Home*</h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
                     $8k
                   </p>
-                  <p className="mb-8 text-sm text-black/50 lg:text-base">
+                  <p className="text-sm text-black/50 lg:text-base">
                     Approximately 1,200 to 1,800 square feet. Includes interior
                     walls, ceilings, and trim. Basic preparation, two coats of
                     paint, and minor repairs included.
@@ -171,21 +171,21 @@ const Services = () => {
                 </div>
               </div>
               <div className="flex select-none flex-col rounded-md border border-slate-200 bg-white text-black shadow-lg sm:w-1/3">
-                <Image
+                {/* <Image
                   src="/interior-painting-1.jpg"
                   alt="Medium Paint"
                   height="500"
                   width="600"
                   className="sm:h[225px] h-[215px] rounded-t-md object-cover"
-                />
-                <div className="flex flex-col gap-4 p-4">
+                /> */}
+                <div className="flex flex-col gap-4 p-6">
                   <div className="flex items-center justify-between">
                     <h5 className="font-medium sm:text-base">Medium Home*</h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
                     $15k
                   </p>
-                  <p className="mb-8 text-sm text-black/50 lg:text-base">
+                  <p className="text-sm text-black/50 lg:text-base">
                     Approximately 1,800 to 3,000 square feet. Includes interior
                     walls, ceilings, and trim. Thorough preparation, two coats
                     of premium paint, minor drywall repairs, and trim painting.
@@ -193,21 +193,21 @@ const Services = () => {
                 </div>
               </div>
               <div className="flex select-none flex-col rounded-md border border-slate-200 bg-white text-black shadow-lg sm:w-1/3">
-                <Image
+                {/* <Image
                   src="/interior-painting-4.png"
                   alt="Large Paint"
                   height="500"
                   width="600"
                   className="sm:h[225px] h-[215px] rounded-t-md object-cover"
-                />
-                <div className="flex flex-col gap-4 p-4">
+                /> */}
+                <div className="flex flex-col gap-4 p-6">
                   <div className="flex items-center justify-between">
                     <h5 className="font-medium sm:text-base">Large Home*</h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
                     $30k+
                   </p>
-                  <p className="mb-8 text-sm text-black/50 lg:text-base">
+                  <p className="text-sm text-black/50 lg:text-base">
                     Large home with over 3,000 square feet. Includes extensive
                     preparation, two coats of high-quality paint, repairs to
                     walls and trim, and attention to architectural details.
