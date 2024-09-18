@@ -126,13 +126,13 @@ const Services = () => {
                 </p>
               </div>
             </div>
-            <Link
+            {/* <Link
               className="mr-auto flex rounded-sm px-1 text-sm font-medium text-white underline underline-offset-4 focus:border-neutral-200 focus:ring-2 focus-visible:outline-none focus-visible:ring-offset-2 md:text-base"
               href="/"
               key="projects"
             >
               View Our Complete Process
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
@@ -152,14 +152,14 @@ const Services = () => {
             </div>
             <div className="flex flex-col gap-4 sm:flex-row md:gap-8">
               <div className="flex select-none flex-col rounded-md border border-slate-200 bg-white text-black shadow-lg sm:w-1/3">
-                <Image
+                {/* <Image
                   src="/home-renovation-1.jpg"
                   alt="Basic Renovation"
                   height="500"
                   width="600"
                   className="sm:h[225px] h-[215px] rounded-t-md object-cover"
-                />
-                <div className="flex flex-col gap-4 p-4">
+                /> */}
+                <div className="flex flex-col gap-4 p-6">
                   <div className="flex items-center justify-between">
                     <h5 className="font-medium sm:text-base">
                       Basic Home Renovation*
@@ -168,7 +168,7 @@ const Services = () => {
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
                     $150k
                   </p>
-                  <p className="mb-8 text-sm text-black/50 lg:text-base">
+                  <p className="text-sm text-black/50 lg:text-base">
                     Get a fresh start with a complete floor refinish and a full
                     house repaint. This package includes a basic remodel of your
                     kitchen and bathroom, replacement of all trims, and a new
@@ -177,14 +177,14 @@ const Services = () => {
                 </div>
               </div>
               <div className="flex select-none flex-col rounded-md border border-slate-200 bg-white text-black shadow-lg sm:w-1/3">
-                <Image
+                {/* <Image
                   src="/home-renovation-2.jpeg"
                   alt="Average Renovation"
                   height="500"
                   width="600"
                   className="sm:h[225px] h-[215px] rounded-t-md object-cover"
-                />
-                <div className="flex flex-col gap-4 p-4">
+                /> */}
+                <div className="flex flex-col gap-4 p-6">
                   <div className="flex items-center justify-between">
                     <h5 className="font-medium sm:text-base">
                       Average Home Renovation*
@@ -193,7 +193,7 @@ const Services = () => {
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
                     $250k
                   </p>
-                  <p className="mb-8 text-sm text-black/50 lg:text-base">
+                  <p className="text-sm text-black/50 lg:text-base">
                     Enhance your home with selective wall reconfigurations, a
                     brand new floor finish, and a complete repaint. This package
                     includes kitchen and bathroom remodels, new trims, and an
@@ -202,14 +202,14 @@ const Services = () => {
                 </div>
               </div>
               <div className="flex select-none flex-col rounded-md border border-slate-200 bg-white text-black shadow-lg sm:w-1/3">
-                <Image
+                {/* <Image
                   src="/basement-2.jpg"
                   alt="High-End Renovation"
                   height="500"
                   width="600"
                   className="sm:h[225px] h-[215px] rounded-t-md object-cover"
-                />
-                <div className="flex flex-col gap-4 p-4">
+                /> */}
+                <div className="flex flex-col gap-4 p-6">
                   <div className="flex items-center justify-between">
                     <h5 className="font-medium sm:text-base">
                       High-End Home Renovation*
@@ -218,7 +218,7 @@ const Services = () => {
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
                     $400k+
                   </p>
-                  <p className="mb-8 text-sm text-black/50 lg:text-base">
+                  <p className="text-sm text-black/50 lg:text-base">
                     Transform your home with a thorough reconfiguration of walls
                     where necessary, complete room upgrades, and extensive
                     kitchen and bathroom remodels. This package also includes

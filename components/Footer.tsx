@@ -47,12 +47,12 @@ const Footer = () => {
           >
             Bathroom Remodeling
           </Link>
-          <Link
+          {/* <Link
             href="/services/home-renovations"
             className="px-1 text-sm text-white/50 hover:text-white"
           >
             Home Renovations
-          </Link>
+          </Link> */}
           <Link
             href="/services/interior-painting"
             className="px-1 text-sm text-white/50 hover:text-white"
@@ -143,12 +143,12 @@ const Footer = () => {
             >
               Bathroom Remodeling
             </Link>
-            <Link
+            {/* <Link
               href="/services/home-renovations"
               className="px-1 text-sm text-white/50 hover:text-white"
             >
               Home Renovations
-            </Link>
+            </Link> */}
             <Link
               href="/services/interior-painting"
               className="px-1 text-sm text-white/50 hover:text-white"
