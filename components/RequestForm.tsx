@@ -1,9 +1,24 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
+// Define types for form data and error messages
+interface FormData {
+  fullName: string;
+  email: string;
+  phoneNumber: string;
+  streetAddress: string;
+}
+
+interface Errors {
+  fullName?: string;
+  email?: string;
+  phoneNumber?: string;
+  streetAddress?: string;
+}
+
 export default function SimpleForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     fullName: "",
     email: "",
     phoneNumber: "",
@@ -11,7 +26,7 @@ export default function SimpleForm() {
   });
 
   // Error state for each field
-  const [errors, setErrors] = useState({
+  const [errors, setErrors] = useState<Errors>({
     fullName: "",
     email: "",
     phoneNumber: "",
@@ -22,7 +37,7 @@ export default function SimpleForm() {
   const templateID = "template_ay93zqo";
   const publicKey = "MzsPj1nZVAJnFvzuj";
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
     // Update phone number format if it's the phone number field
@@ -36,7 +51,7 @@ export default function SimpleForm() {
     setErrors({ ...errors, [name]: "" }); // Clear error on input change
   };
 
-  const formatPhoneNumber = (value) => {
+  const formatPhoneNumber = (value: string) => {
     // Remove all non-digit characters
     const digits = value.replace(/\D/g, "");
 
@@ -48,7 +63,7 @@ export default function SimpleForm() {
 
   const validateForm = () => {
     let isValid = true;
-    const newErrors = {};
+    const newErrors: Errors = {}; // Ensure newErrors is typed
 
     // Check if full name contains at least 2 words
     if (!formData.fullName || formData.fullName.trim().split(" ").length < 2) {
@@ -80,7 +95,7 @@ export default function SimpleForm() {
     return isValid; // Return the validity status
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -90,25 +105,25 @@ export default function SimpleForm() {
       return; // Prevent form submission
     }
 
-    emailjs.send(serviceID, templateID, formData, publicKey).then(
-      () => {
-        alert(
-          "Consultation request submitted successfully! We typically respond to your reuest for a consultation within 1 business day.",
-        );
-        setFormData({
-          fullName: "",
-          email: "",
-          phoneNumber: "",
-          streetAddress: "",
-        }); // Reset all fields
-        setIsSubmitting(false);
-      },
-      (error) => {
-        console.error("Failed to send request:", error);
-        alert("Failed to send request. Please try again.");
-        setIsSubmitting(false);
-      },
-    );
+    emailjs
+      .send(serviceID, templateID, formData as Record<string, any>, publicKey)
+      .then(
+        () => {
+          alert("Request submitted successfully!");
+          setFormData({
+            fullName: "",
+            email: "",
+            phoneNumber: "",
+            streetAddress: "",
+          }); // Reset all fields
+          setIsSubmitting(false);
+        },
+        (error) => {
+          console.error("Failed to send request:", error);
+          alert("Failed to send request. Please try again.");
+          setIsSubmitting(false);
+        },
+      );
   };
 
   return (
@@ -117,9 +132,10 @@ export default function SimpleForm() {
       className="grid grid-cols-1 gap-4 sm:grid-cols-2"
       noValidate // Prevent native HTML validation
     >
+      {/* Form Fields */}
       <div>
         {errors.fullName ? (
-          <p className="text-sm text-red-600">{errors.fullName}</p> // Error message instead of label
+          <p className="text-sm text-red-600">{errors.fullName}</p>
         ) : (
           <label
             htmlFor="fullName"
@@ -131,21 +147,21 @@ export default function SimpleForm() {
         <input
           type="text"
           name="fullName"
-          id="fullName" // Added id for label association
+          id="fullName"
           placeholder="John Doe"
           value={formData.fullName}
           onChange={handleChange}
           required
-          inputMode="text" // Correct keyboard for names
+          inputMode="text"
           className={`w-full rounded-md border border-gray-300 p-2 shadow-sm ${
             errors.fullName ? "border-red-500" : ""
-          }`} // Highlight error
+          }`}
         />
       </div>
 
       <div>
         {errors.email ? (
-          <p className="text-sm text-red-600">{errors.email}</p> // Error message instead of label
+          <p className="text-sm text-red-600">{errors.email}</p>
         ) : (
           <label
             htmlFor="email"
@@ -157,21 +173,21 @@ export default function SimpleForm() {
         <input
           type="email"
           name="email"
-          id="email" // Added id for label association
+          id="email"
           placeholder="johndoe@example.com"
           value={formData.email}
           onChange={handleChange}
           required
-          inputMode="email" // Correct keyboard for email
+          inputMode="email"
           className={`w-full rounded-md border border-gray-300 p-2 shadow-sm ${
             errors.email ? "border-red-500" : ""
-          }`} // Highlight error
+          }`}
         />
       </div>
 
       <div>
         {errors.phoneNumber ? (
-          <p className="text-sm text-red-600">{errors.phoneNumber}</p> // Error message instead of label
+          <p className="text-sm text-red-600">{errors.phoneNumber}</p>
         ) : (
           <label
             htmlFor="phoneNumber"
@@ -183,21 +199,21 @@ export default function SimpleForm() {
         <input
           type="tel"
           name="phoneNumber"
-          id="phoneNumber" // Added id for label association
-          placeholder="123-456-7890" // Updated placeholder for clarity
+          id="phoneNumber"
+          placeholder="123-456-7890"
           value={formData.phoneNumber}
           onChange={handleChange}
           required
-          inputMode="numeric" // Correct keyboard for numbers
+          inputMode="numeric"
           className={`w-full rounded-md border border-gray-300 p-2 shadow-sm ${
             errors.phoneNumber ? "border-red-500" : ""
-          }`} // Highlight error
+          }`}
         />
       </div>
 
       <div>
         {errors.streetAddress ? (
-          <p className="text-sm text-red-600">{errors.streetAddress}</p> // Error message instead of label
+          <p className="text-sm text-red-600">{errors.streetAddress}</p>
         ) : (
           <label
             htmlFor="streetAddress"
@@ -209,15 +225,15 @@ export default function SimpleForm() {
         <input
           type="text"
           name="streetAddress"
-          id="streetAddress" // Added id for label association
+          id="streetAddress"
           placeholder="123 Main St, Anytown, USA"
           value={formData.streetAddress}
           onChange={handleChange}
           required
-          inputMode="text" // Correct keyboard for addresses
+          inputMode="text"
           className={`w-full rounded-md border border-gray-300 p-2 shadow-sm ${
             errors.streetAddress ? "border-red-500" : ""
-          }`} // Highlight error
+          }`}
         />
       </div>
 
@@ -226,7 +242,7 @@ export default function SimpleForm() {
         disabled={isSubmitting}
         className={`col-span-1 mt-3 rounded-md p-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 sm:col-span-2 ${
           isSubmitting ? "cursor-not-allowed bg-gray-400" : "bg-brand-secondary"
-        }`} // Add conditional styling for submitting state
+        }`}
       >
         {isSubmitting ? "Submitting..." : "Submit"}
       </button>
