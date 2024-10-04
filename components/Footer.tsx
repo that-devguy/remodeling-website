@@ -78,14 +78,6 @@ const Footer = () => {
           to custom built-ins, our family-owned business brings your vision to
           life.
         </p>
-        <div className="mt-6">
-          <p className="flex text-sm text-white lg:hidden">
-            Disclaimer: All images used on this website are for design concept
-            purposes only. We do not own the rights to these images. If you are
-            the owner of any of these images and wish for them to be removed,
-            please contact us.
-          </p>
-        </div>
         <div>
           <Link href="/" className="">
             <Image
@@ -166,14 +158,6 @@ const Footer = () => {
               kittsremodeling@gmail.com
             </Link>
           </ul>
-        </div>
-        <div className="ml-auto flex w-2/3 text-sm text-white">
-          <p>
-            Disclaimer: All images used on this website are for design concept
-            purposes only. We do not own the rights to these images. If you are
-            the owner of any of these images and wish for them to be removed,
-            please contact us.
-          </p>
         </div>
       </div>
     </footer>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import {
   Dialog,
@@ -27,14 +27,12 @@ const Button = ({ title }: ButtonProps) => {
           <DialogTitle className="font-medium">
             Request a Free Consultation
           </DialogTitle>
-          <DialogDescription>
-            <p className="mb-8 md:text-base">
-              We typically respond to your request for a consultation within 1
-              business day.
-            </p>
-            <RequestForm />
+          <DialogDescription className="mb-8 md:text-base">
+            We typically respond to your request for a consultation within 1
+            business day.
           </DialogDescription>
         </DialogHeader>
+        <RequestForm />
       </DialogContent>
     </Dialog>
   );
