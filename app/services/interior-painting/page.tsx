@@ -205,7 +205,7 @@ const Services = () => {
                     <h5 className="font-medium sm:text-base">Large Home*</h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
-                    $30k+
+                    $20k+
                   </p>
                   <p className="text-sm text-black/50 lg:text-base">
                     Large home with over 3,000 square feet. Includes extensive

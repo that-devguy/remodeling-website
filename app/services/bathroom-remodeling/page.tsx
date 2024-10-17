@@ -163,7 +163,7 @@ const Services = () => {
                     </h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
-                    $20k
+                    $10k
                   </p>
                   <p className="text-sm text-black/50 lg:text-base">
                     We offer a range of upgrades to transform your bathroom,
@@ -189,7 +189,7 @@ const Services = () => {
                     </h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
-                    $55k
+                    $25k
                   </p>
                   <p className="text-sm text-black/50 lg:text-base">
                     Install a new vanity with premium hardware, re-tile your
@@ -216,7 +216,7 @@ const Services = () => {
                     </h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
-                    $75k +
+                    $40k +
                   </p>
                   <p className="mb-8 text-sm text-black/50 lg:text-base">
                     Install a custom tile shower with a heavy, frameless glass

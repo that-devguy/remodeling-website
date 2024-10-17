@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+
 
 // Define types for form data and error messages
 interface FormData {

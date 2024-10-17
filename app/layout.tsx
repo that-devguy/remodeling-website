@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Kitts Remodeling: Expert Home Remodeling & Renovations Since 2001",
   description:
     "Family-owned since 2001 with over 25 years of experience. We provide quality craftsmanship and an honest work ethic in home remodeling.",
+  
 };
 
 export default function RootLayout({

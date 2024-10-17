@@ -164,7 +164,7 @@ const Services = () => {
                     </h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
-                    $45k
+                    $25k
                   </p>
                   <p className="text-sm text-black/50 lg:text-base">
                     Reface or refinish existing cabinets, install new beautiful
@@ -188,7 +188,7 @@ const Services = () => {
                     </h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
-                    $85k
+                    $45k
                   </p>
                   <p className="text-sm text-black/50 lg:text-base">
                     Install semi-custom cabinets, get an updated lighting
@@ -212,7 +212,7 @@ const Services = () => {
                     </h5>
                   </div>
                   <p className="title text-2xl font-bold text-black/50 lg:text-4xl 2xl:text-5xl">
-                    $120k +
+                    $85k +
                   </p>
                   <p className="text-sm text-black/50 lg:text-base">
                     Completely reconfigure your kitchen layout with custom
