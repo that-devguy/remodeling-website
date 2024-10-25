@@ -10,25 +10,25 @@ const Footer = () => {
           {/* <p className="text-lg font-bold">Company</p>
           <Link
             href="/"
-            className="px-1 text-sm text-white/50 hover:text-white"
+            className="px-1 text-sm text-white"
           >
             About
           </Link>
           <Link
             href="/"
-            className="px-1 text-sm text-white/50 hover:text-white"
+            className="px-1 text-sm text-white"
           >
             Our Process
           </Link>
           <Link
             href="/"
-            className="px-1 text-sm text-white/50 hover:text-white"
+            className="px-1 text-sm text-white"
           >
             FAQ
           </Link>
           <Link
             href="/"
-            className="px-1 text-sm text-white/50 hover:text-white"
+            className="px-1 text-sm text-white"
           >
             Careers
           </Link> */}
@@ -37,25 +37,25 @@ const Footer = () => {
           <p className="text-lg font-bold">Services</p>
           <Link
             href="/services/kitchen-remodeling"
-            className="px-1 text-sm text-white/50 hover:text-white"
+            className="px-1 text-sm text-white"
           >
             Kitchen Remodeling
           </Link>
           <Link
             href="/services/bathroom-remodeling"
-            className="px-1 text-sm text-white/50 hover:text-white"
+            className="px-1 text-sm text-white"
           >
             Bathroom Remodeling
           </Link>
           {/* <Link
             href="/services/home-renovations"
-            className="px-1 text-sm text-white/50 hover:text-white"
+            className="px-1 text-sm text-white"
           >
             Home Renovations
           </Link> */}
           <Link
             href="/services/interior-painting"
-            className="px-1 text-sm text-white/50 hover:text-white"
+            className="px-1 text-sm text-white"
           >
             Interior Painting
           </Link>
@@ -63,10 +63,7 @@ const Footer = () => {
         <ul className="flex flex-col gap-2 text-white">
           <p className="text-lg font-bold">Contact</p>
           <p className="px-1 text-sm text-white">(216) 417-9100</p>
-          <Link
-            href="/"
-            className="px-1 text-sm text-white/50 hover:text-white"
-          >
+          <Link href="/" className="px-1 text-sm text-white">
             kittsremodeling@gmail.com
           </Link>
         </ul>
@@ -98,25 +95,25 @@ const Footer = () => {
             {/* <p className="text-lg font-bold">Company</p>
             <Link
               href="/"
-              className="px-1 text-sm text-white/50 hover:text-white"
+              className="px-1 text-sm text-white"
             >
               About
             </Link>
             <Link
               href="/"
-              className="px-1 text-sm text-white/50 hover:text-white"
+              className="px-1 text-sm text-white"
             >
               Our Process
             </Link>
             <Link
               href="/"
-              className="px-1 text-sm text-white/50 hover:text-white"
+              className="px-1 text-sm text-white"
             >
               FAQ
             </Link>
             <Link
               href="/"
-              className="px-1 text-sm text-white/50 hover:text-white"
+              className="px-1 text-sm text-white"
             >
               Careers
             </Link> */}
@@ -125,25 +122,25 @@ const Footer = () => {
             <p className="text-lg font-bold">Services</p>
             <Link
               href="/services/kitchen-remodeling"
-              className="px-1 text-sm text-white/50 hover:text-white"
+              className="px-1 text-sm text-white"
             >
               Kitchen Remodeling
             </Link>
             <Link
               href="/services/bathroom-remodeling"
-              className="px-1 text-sm text-white/50 hover:text-white"
+              className="px-1 text-sm text-white"
             >
               Bathroom Remodeling
             </Link>
             {/* <Link
               href="/services/home-renovations"
-              className="px-1 text-sm text-white/50 hover:text-white"
+              className="px-1 text-sm text-white"
             >
               Home Renovations
             </Link> */}
             <Link
               href="/services/interior-painting"
-              className="px-1 text-sm text-white/50 hover:text-white"
+              className="px-1 text-sm text-white"
             >
               Interior Painting
             </Link>
@@ -151,10 +148,7 @@ const Footer = () => {
           <ul className="flex flex-col gap-2 text-white">
             <p className="text-lg font-bold">Contact</p>
             <p className="px-1 text-sm text-white">(216) 417-9100</p>
-            <Link
-              href="/"
-              className="px-1 text-sm text-white/50 hover:text-white"
-            >
+            <Link href="/" className="px-1 text-sm text-white">
               kittsremodeling@gmail.com
             </Link>
           </ul>
